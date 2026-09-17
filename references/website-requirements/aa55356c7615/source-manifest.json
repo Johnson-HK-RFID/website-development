@@ -1,0 +1,28 @@
+﻿{
+    "repository":  "https://github.com/HKRFID-HQ/Embuilded-website-",
+    "source":  "User-provided GitHub ZIP",
+    "archive":  "Embuilded-website--main.zip",
+    "archive_sha256":  "aa55356c7615fe5543d72de8cbb657f4609641ad615d1957a719b8a681e37066",
+    "branch_label":  "main (archive label; not remotely verified)",
+    "commit":  null,
+    "extracted_at_utc":  "2026-09-15T05:32:51.7424015Z",
+    "format":  "Source ZIP; no Git history",
+    "files":  [
+                  {
+                      "path":  "Embuilded-website--main/CONTENT_ARCHITECTURE.md",
+                      "sha256":  "6595f6a4eca9bd043297bc72fa929907a5ed2ba1b11a4395e87f79a076139e24"
+                  },
+                  {
+                      "path":  "Embuilded-website--main/README.md",
+                      "sha256":  "25f7d0d836766bec5e2921b4073f6df1dd1c9c10ba8f1c58b0a4fba4402f139f"
+                  },
+                  {
+                      "path":  "Embuilded-website--main/TASKS.md",
+                      "sha256":  "c2607b49b0e5ba5e59da59f78a01884e0cf4edcb4e3b7654f756277bf34209ff"
+                  },
+                  {
+                      "path":  "Embuilded-website--main/WEBSITE_STRATEGY.md",
+                      "sha256":  "746d98d17e2f83fa99ece855738cb5e6d8073d9e26e17552abcd84e2dcb98ba3"
+                  }
+              ]
+}

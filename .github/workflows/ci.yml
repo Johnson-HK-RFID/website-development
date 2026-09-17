@@ -1,0 +1,48 @@
+name: Website checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: npm run typecheck
+      - name: Verify protected source documents
+        working-directory: .
+        shell: pwsh
+        run: ./scripts/verify-sources.ps1
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Check production pages and interactions
+        run: |
+          npm start > /tmp/embuilded-preview.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --silent --fail http://127.0.0.1:3000 > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-report
+          path: .artifacts/browser
+          if-no-files-found: ignore

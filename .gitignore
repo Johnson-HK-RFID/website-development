@@ -1,0 +1,13 @@
+.tools/
+.artifacts/
+.publish/
+**/node_modules/
+**/.next/
+**/test-results/
+**/playwright-report/
+**/*.tsbuildinfo
+**/.env*
+!**/.env.example
+*.zip
+*.log
+.DS_Store
