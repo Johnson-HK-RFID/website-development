@@ -2,9 +2,26 @@
 
 ## Visual redesign review
 
-The subsequent visual overhaul preserves the first implementation's content. A versioned fixture records main, header and footer text, heading order, links, form fields, anchors and titles across all 15 routes. The redesigned pages passed comparison against that fixture. Forty layout checks covered 375, 768, 960 and 1440 pixels. Twenty light/dark accessibility audits found no WCAG A/AA violations. The production build, lint checks and seven inquiry tests passed; final production browser and performance checks are in progress.
+The subsequent visual overhaul preserves the first implementation's content. A versioned fixture records main, header and footer text, heading order, links, form fields, anchors and titles across all 15 routes. The redesigned pages passed comparison against that fixture. Forty layout checks covered 375, 768, 960 and 1440 pixels. Twenty light/dark accessibility audits found no WCAG A/AA violations. The production build, lint checks and seven inquiry tests passed. [GitHub Actions run 35176110208](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35176110208) passed all checks for implementation commit `7e6a9d82722c96b312a4573702b6ef45cf777f59`, including production browser checks and content preservation.
 
 The interface now uses self-hosted Geist, a graphite/cool-white/blue palette, a wide architectural hero, compact functional SVGs and a typographic architecture diagram. See [UI_REDESIGN.md](UI_REDESIGN.md) for the audit, constraints and current status. The original implementation results below remain a historical baseline.
+
+Final local production checks also passed: all 15 routes, 40 layout combinations, 39 internal destinations, image resizing, navigation, catalogs, the inquiry download, endpoint behavior and the content fixture. No browser runtime errors or automated WCAG A/AA violations were recorded.
+
+### Redesign performance
+
+| Mobile Lighthouse measure | Result |
+| --- | --- |
+| Performance | 90 |
+| Accessibility | 100 |
+| Best practices | 100 |
+| SEO | 66; indexing intentionally disabled for review |
+| First contentful paint | 1.1 seconds |
+| Largest contentful paint | 3.0 seconds |
+| Total blocking time | 250 milliseconds |
+| Cumulative layout shift | 0 |
+
+Image delivery and LCP request discovery passed. The report warns that the local CPU is slower than the expected baseline. LCP remains above the 2.5-second target in this simulated run; measure again on staging before making production performance claims. Reports are stored in `.artifacts/redesign/lighthouse.report.json` and `.html`. This audit does not measure production field INP.
 
 ## Scope
 

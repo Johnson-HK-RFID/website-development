@@ -38,8 +38,20 @@ Capture the existing rendered text, heading order, links, field order, anchors a
 
 ## Status
 
+### Homepage preview
+
+![Redesigned homepage at tablet width](frontend/previews/home-tablet.png)
+
+### TRACI architecture
+
+![Redesigned TRACI architecture diagram](frontend/previews/traci-diagram.png)
+
 Visual implementation and screenshot review are complete. The preserved content fixture is versioned at `website/tests/fixtures/redesign-content.json`. `npm run test:content` verifies all 15 routes against the baseline; only use `node scripts/content-snapshot.mjs --capture` when intentionally establishing a new approved content baseline.
 
 The content comparison passed, including header and footer text. Forty layout checks across 375, 768, 960 and 1440 pixels found no horizontal overflow. Twenty automated accessibility audits across representative page families in light and dark modes reported no WCAG A/AA violations. Screenshots are saved locally under `.artifacts/redesign/`.
 
-The production build, lint checks and seven unit tests passed. Production browser verification identified a delayed first-viewport image on About; both concept-image placements now load eagerly, and the browser check waits for actual image decoding. Final verification of this fix and publication are in progress.
+The production build, lint checks and seven unit tests passed. Production browser verification identified a delayed first-viewport image on About; both concept-image placements now load eagerly, and the browser check waits for actual image decoding.
+
+Implementation commit [`7e6a9d8`](https://github.com/Johnson-HK-RFID/website-development/commit/7e6a9d82722c96b312a4573702b6ef45cf777f59) is pushed to `main`. The [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35176110208) passed all checks, including the corrected production image check and the 15-route content preservation test. The final local production build, complete browser checks and content comparison also passed. The production preview is available at `http://localhost:3000` while the local server runs.
+
+The final mobile Lighthouse audit scored 90 performance, 100 accessibility and 100 best practices, with CLS 0. SEO remains 66 because the review build intentionally blocks indexing. LCP was 3.0 seconds and TBT was 250 milliseconds; Lighthouse reported a slow-host CPU warning. These are local simulated results, and the LCP target still needs validation on staging. See [VERIFICATION.md](VERIFICATION.md) for details.

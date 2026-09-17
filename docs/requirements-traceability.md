@@ -1,6 +1,6 @@
 # Embuilded Requirements Traceability
 
-Status: first implementation verified and delivered to GitHub main; local and GitHub Actions checks passed.
+Status: implementation and visual redesign verified and delivered to GitHub main; local and GitHub Actions checks passed. The redesign preserves all existing page text and structure, verified against a rendered-content fixture.
 
 ## Source baseline
 

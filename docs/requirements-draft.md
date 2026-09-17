@@ -1,6 +1,6 @@
 # Embuilded Website Requirements Supplement
 
-Status: first implementation verified and delivered to GitHub main. Final brand assets and operational configuration remain open.
+Status: implementation and visual redesign verified and delivered to GitHub main. Final brand approval and operational configuration remain open.
 
 ## 1. Source baseline
 

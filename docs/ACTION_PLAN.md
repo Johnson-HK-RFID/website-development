@@ -24,7 +24,9 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ## Current activity
 
-The user requested a complete visual redesign while retaining all text, structure and functionality. Implementation and screenshot review are complete. The 15-route content comparison, 40 responsive checks and 20 light/dark accessibility audits passed. Production verification and publication are in progress. The audit and decisions are recorded in [UI_REDESIGN.md](UI_REDESIGN.md); the earlier delivery below remains the baseline.
+The requested visual redesign is complete and delivered while retaining all text, structure and functionality. The 15-route content comparison, 40 responsive checks and 20 light/dark accessibility audits passed. Redesign commit [`7e6a9d8`](https://github.com/Johnson-HK-RFID/website-development/commit/7e6a9d82722c96b312a4573702b6ef45cf777f59) is delivered to `main`; the [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35176110208) passed all checks. Final local production browser checks also passed. The local preview runs at `http://localhost:3000`.
+
+The mobile Lighthouse performance score is 90, with accessibility and best practices at 100. Deployment-level performance remains an external validation item. The audit, visual decisions and preview screenshots are recorded in [UI_REDESIGN.md](UI_REDESIGN.md). The earlier delivery below remains the baseline.
 
 The implementation is delivered to `main`. Commit [`e23a97c`](https://github.com/Johnson-HK-RFID/website-development/commit/e23a97c66eaccca4c56759e54294180b47ac744d) was pushed and its remote hash verified. The [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35172276874) passed installation, linting, seven unit tests, production build, type checking, source preservation and browser checks on Linux.
 
