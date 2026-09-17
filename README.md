@@ -26,6 +26,7 @@ The Windows workspace also includes optional portable-tool setup scripts. Run `s
 | `docs/DEPLOYMENT.md` | Configuration and deployment instructions |
 | `docs/DESIGN_DECISIONS.md` | Visual rationale, content mapping and asset provenance |
 | `docs/VERIFICATION.md` | Executed checks, results and remaining limitations |
+| `docs/UI_REDESIGN.md` | Visual overhaul, preserved-content baseline and responsive review |
 | `references/website-requirements/` | Preserved user-supplied source requirements |
 
 ## Verification
@@ -40,6 +41,8 @@ npm start
 ```
 
 With the server running separately, `npm run test:browser` checks all pages, responsive layouts, WCAG A/AA rules, navigation, filtering, the project-brief download and endpoint failure behavior. It uses an installed Chrome/Edge executable on Windows. On another environment, install Playwright Chromium (`npx playwright install chromium`) or set `TEST_BROWSER_PATH`. Results are written to `.artifacts/browser/` outside the application.
+
+`npm run test:content` compares all 15 routes with the content baseline preserved before the visual redesign. `npm run test:visual` captures the page families at mobile, tablet and desktop widths and checks light/dark accessibility; its report and screenshots are written to `.artifacts/redesign/`.
 
 ## Inquiry delivery
 

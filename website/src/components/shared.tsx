@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
-import { ArrowRight, ArrowUpRight, Broadcast, Stack, FileText, Camera, Cpu, Tag, User, Network, Check } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, ArrowUpRight, Check } from "@phosphor-icons/react/dist/ssr";
 import { navigation, services } from "@/content/site";
 import { Brand } from "./site-header";
 
@@ -15,26 +15,24 @@ export function PageIntro({ label, title, description, children }: { label: stri
 }
 
 export function ConceptImage({ className = "", priority = false, caption = true }: { className?: string; priority?: boolean; caption?: boolean }) {
-  return <figure className={`concept-image ${className}`}><Image src="/images/built-world-concept.webp" alt="Architectural concept of concrete structures and a tower crane overlooking a coastal city" fill sizes="(max-width: 1023px) 100vw, 50vw" priority={priority} fetchPriority={priority ? "high" : undefined} />{caption && <figcaption>Architectural concept</figcaption>}</figure>;
+  return <figure className={`concept-image ${className}`}><div className="concept-image-frame"><Image src="/images/built-world-concept.webp" alt="Architectural concept of concrete structures and a tower crane overlooking a coastal city" fill sizes={priority ? "(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) calc(100vw - 80px), (max-width: 1431px) calc(100vw - 112px), 1320px" : "(max-width: 767px) calc(100vw - 48px), 50vw"} loading="eager" fetchPriority={priority ? "high" : undefined} /></div>{caption && <figcaption>Architectural concept</figcaption>}</figure>;
 }
 
-export function DeviceIcon({ kind, size = 32 }: { kind: string; size?: number }) {
-  const icons = { camera: Camera, sensor: Cpu, network: Network, tag: Tag, worker: User };
-  const Icon = icons[kind as keyof typeof icons] ?? Cpu;
-  return <Icon size={size} weight="light" aria-hidden="true" />;
+function Connection() {
+  return <svg className="architecture-connector" viewBox="0 0 64 12" fill="none" aria-hidden="true"><path d="M0 6H61M56 1L61 6L56 11" stroke="currentColor" strokeWidth="1.5" /></svg>;
 }
 
 export function Architecture({ compact = false }: { compact?: boolean }) {
   return <div className={`architecture${compact ? " architecture-compact" : ""}`} aria-label="TRACI connects field devices to intelligence, evidence and your platform">
     <div className="architecture-label"><span className="mono">TRACI / SYSTEM OVERVIEW</span><span className="architecture-wordmark">traci<span>.</span></span></div>
     <div className="architecture-flow">
-      <div className="architecture-node"><Broadcast size={28} weight="light" aria-hidden="true" /><strong>Devices</strong><span>Cameras · Sensors · Gateways</span></div>
-      <ArrowRight className="flow-arrow" size={24} aria-hidden="true" />
-      <div className="architecture-node core-node"><Stack size={28} weight="light" aria-hidden="true" /><strong>Intelligence</strong><span>Events · Rules · Workflows</span></div>
-      <ArrowRight className="flow-arrow" size={24} aria-hidden="true" />
-      <div className="architecture-node"><FileText size={28} weight="light" aria-hidden="true" /><strong>Evidence</strong><span>Capture · Review · Reporting</span></div>
+      <div className="architecture-node"><strong>Devices</strong><span>Cameras · Sensors · Gateways</span></div>
+      <Connection />
+      <div className="architecture-node core-node"><strong>Intelligence</strong><span>Events · Rules · Workflows</span></div>
+      <Connection />
+      <div className="architecture-node"><strong>Evidence</strong><span>Capture · Review · Reporting</span></div>
     </div>
-    <div className="architecture-platform"><span>YOUR PLATFORM</span><div>API <i /> MQTT <i /> Webhooks</div><Check size={18} aria-hidden="true" /></div>
+    <div className="architecture-platform"><span>YOUR PLATFORM</span><div>API <i /> MQTT <i /> Webhooks</div></div>
   </div>;
 }
 

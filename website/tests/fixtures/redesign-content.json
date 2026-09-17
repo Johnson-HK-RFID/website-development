@@ -1,0 +1,1134 @@
+{
+  "/": {
+    "text": "CONNECTEDINTHEFIELDEmbeddedintelligenceforthebuiltworld.Fielddevices,operationaldataandevidence.Connectedintopracticalsystems.ExploresolutionsMeetTRACIArchitecturalconceptTHEBUILTWORLD,CONNECTEDFromthefield.Tothebiggerpicture.ConnectdevicesMakedatausefulCaptureevidenceRealenvironments.Connectedsolutions.Startwiththechallengeonyoursite.Buildtherightcombinationofdevices,engineeringandintelligence.SitesafetyGasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.SitevisibilityHookCamBringconnectedcamerasystemsclosertoliftingoperations.SitesafetyWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.SitevisibilitySiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.AssetoperationsRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords.ViewallsolutionsExploreTRACIBCDSandthepluginfamilyThreewaystomoveforward.Usetheengineeringyouneed.Addthehardwarethatfits.Connectitwithmanagedservices.Exploreourservices01FieldEngineeringPracticalengineering,fromthefirstsitesurveytocommissioningandmaintenance.02ConnectedHardware+EngineeringFielddevicesandtheengineeringneededtobringthemintoyouroperation.03ManagedDevice&SoftwareServicesManageddeviceinfrastructureandsoftwareintegration,builtaroundyourplatform.THETRACIPLATFORMOneconnectedview.Fromdevicetoevidence.Amodulardevice,intelligenceandevidenceplatformforthebuiltworld.Connectthefieldwiththesystemsyourteamsuse.MeetTRACITRACI/SYSTEMOVERVIEWtraci.DevicesCameras·Sensors·GatewaysIntelligenceEvents·Rules·WorkflowsEvidenceCapture·Review·ReportingYOURPLATFORMAPIMQTTWebhooksBuiltforcollaboration.Keepyourplatform.Weconnectthefield.Yoursoftware.Yourcustomerrelationship.Ourfieldengineering,connecteddevicesandmanagedinfrastructureunderneathit.ExplorepartnershipsBuiltaroundyourenvironment.Practicalsystemsfortheplaceswhereworkhappens.01Construction02Infrastructure03Property&facilities04IndustrialFieldnotes&casestudiesProjectstoriesarebeingprepared.Inthemeantime,explorehowoursolutionsfityoursite.ExploresolutionsBringyournextprojectintofocus.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Embuilded | Embedded intelligence for the built world",
+    "headings": [
+      [
+        "H1",
+        "Embeddedintelligenceforthebuiltworld."
+      ],
+      [
+        "H2",
+        "Realenvironments.Connectedsolutions."
+      ],
+      [
+        "H3",
+        "GasMonitoring"
+      ],
+      [
+        "H3",
+        "HookCam"
+      ],
+      [
+        "H3",
+        "WorkerTracking"
+      ],
+      [
+        "H3",
+        "SiteVision"
+      ],
+      [
+        "H3",
+        "RFID/AssetTracking"
+      ],
+      [
+        "H2",
+        "Threewaystomoveforward."
+      ],
+      [
+        "H3",
+        "FieldEngineering"
+      ],
+      [
+        "H3",
+        "ConnectedHardware+Engineering"
+      ],
+      [
+        "H3",
+        "ManagedDevice&SoftwareServices"
+      ],
+      [
+        "H2",
+        "Oneconnectedview.Fromdevicetoevidence."
+      ],
+      [
+        "H2",
+        "Keepyourplatform.Weconnectthefield."
+      ],
+      [
+        "H2",
+        "Builtaroundyourenvironment."
+      ],
+      [
+        "H3",
+        "Construction"
+      ],
+      [
+        "H3",
+        "Infrastructure"
+      ],
+      [
+        "H3",
+        "Property&facilities"
+      ],
+      [
+        "H3",
+        "Industrial"
+      ],
+      [
+        "H2",
+        "Fieldnotes&casestudies"
+      ],
+      [
+        "H2",
+        "Bringyournextprojectintofocus."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Exploresolutions"
+      ],
+      [
+        "/traci",
+        "MeetTRACI"
+      ],
+      [
+        "/solutions/gas-monitoring",
+        "SitesafetyGasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence."
+      ],
+      [
+        "/solutions/hookcam",
+        "SitevisibilityHookCamBringconnectedcamerasystemsclosertoliftingoperations."
+      ],
+      [
+        "/solutions/worker-tracking",
+        "SitesafetyWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations."
+      ],
+      [
+        "/solutions/site-vision",
+        "SitevisibilitySiteVisionPutsitecameras,visualintelligenceandevidenceintocontext."
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "AssetoperationsRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords."
+      ],
+      [
+        "/solutions",
+        "Viewallsolutions"
+      ],
+      [
+        "/traci#plugins",
+        "ExploreTRACIBCDSandthepluginfamily"
+      ],
+      [
+        "/services",
+        "Exploreourservices"
+      ],
+      [
+        "/services#field-engineering",
+        ""
+      ],
+      [
+        "/services#connected-hardware",
+        ""
+      ],
+      [
+        "/services#managed-services",
+        ""
+      ],
+      [
+        "/traci",
+        "MeetTRACI"
+      ],
+      [
+        "/partners",
+        "Explorepartnerships"
+      ],
+      [
+        "/industries#construction",
+        "01Construction"
+      ],
+      [
+        "/industries#infrastructure",
+        "02Infrastructure"
+      ],
+      [
+        "/industries#property-facilities",
+        "03Property&facilities"
+      ],
+      [
+        "/industries#industrial",
+        "04Industrial"
+      ],
+      [
+        "/solutions",
+        "Exploresolutions"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": [
+      "field-engineering",
+      "connected-hardware",
+      "managed-services"
+    ]
+  },
+  "/traci": {
+    "text": "TRACIThefield,connected.Theevidence,incontext.Amodulardevice,intelligenceandevidenceplatformforthebuiltworld.Connectfieldoperationswiththesystemsyourteamsalreadyuse.Let’stalkTRACI/SYSTEMOVERVIEWtraci.DevicesCameras·Sensors·GatewaysIntelligenceEvents·Rules·WorkflowsEvidenceCapture·Review·ReportingYOURPLATFORMAPIMQTTWebhooksFromindividualsignalstoconnectedoperations.Buildaroundthecapabilitiesyouroperationneeds.DeviceconnectivityBringfielddevicesintoaconnectedarchitecture.Health&lifecycleManagedevicehealthandtheoperatinglifecycle.Telemetry&eventsBringoperationalsignalsintoacommonworkflow.AlertsRouterelevanteventsintoanalertingprocess.EvidencecaptureConnectoperationaleventswithsupportingevidence.Rules&workflowsShapeeventhandlingaroundoperatingrequirements.ReportingMakeoperationalrecordsavailableforreview.APIintegrationConnectwiththesystemsyourteamsalreadyuse.Multi-siteoperationsSupportconnectedoperationsacrosssites.Amodularpluginfamily.ExploretheTRACImodulesaroundyouroperationalrequirements.TRACISafetyTRACIVisionTRACIAssetTRACIBCDSTRACISSSSModuleselection,functionalityandintegrationscopearedefinedforeachproject.Discussyourrequirementstoidentifytherightfit.Yourplatform.Aconnectedfield.BringTRACIcapabilitiesintothewayyouroperationworks.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "TRACI platform | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Thefield,connected.Theevidence,incontext."
+      ],
+      [
+        "H2",
+        "Fromindividualsignalstoconnectedoperations."
+      ],
+      [
+        "H3",
+        "Deviceconnectivity"
+      ],
+      [
+        "H3",
+        "Health&lifecycle"
+      ],
+      [
+        "H3",
+        "Telemetry&events"
+      ],
+      [
+        "H3",
+        "Alerts"
+      ],
+      [
+        "H3",
+        "Evidencecapture"
+      ],
+      [
+        "H3",
+        "Rules&workflows"
+      ],
+      [
+        "H3",
+        "Reporting"
+      ],
+      [
+        "H3",
+        "APIintegration"
+      ],
+      [
+        "H3",
+        "Multi-siteoperations"
+      ],
+      [
+        "H2",
+        "Amodularpluginfamily."
+      ],
+      [
+        "H2",
+        "Yourplatform.Aconnectedfield."
+      ]
+    ],
+    "links": [
+      [
+        "/contact?service=TRACI%20platform",
+        "Let’stalk"
+      ],
+      [
+        "/contact?service=TRACI%20Safety",
+        "TRACISafety"
+      ],
+      [
+        "/contact?service=TRACI%20Vision",
+        "TRACIVision"
+      ],
+      [
+        "/contact?service=TRACI%20Asset",
+        "TRACIAsset"
+      ],
+      [
+        "/contact?service=TRACI%20BCDS",
+        "TRACIBCDS"
+      ],
+      [
+        "/contact?service=TRACI%20SSSS",
+        "TRACISSSS"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": [
+      "plugins"
+    ]
+  },
+  "/solutions": {
+    "text": "SOLUTIONSStartwithyoursite.Connectwhatmatters.Practicalcombinationsoffielddevices,engineeringandTRACIcapabilities,shapedaroundtheenvironmentyouworkin.AllsolutionsSitesafetySitevisibilityAssetoperationsSearchsolutions6solutions01SitesafetyGasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.Exploresolution02SitevisibilityHookCamBringconnectedcamerasystemsclosertoliftingoperations.Exploresolution03SitesafetyOutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.Exploresolution04SitesafetyWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.Exploresolution05SitevisibilitySiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.Exploresolution06AssetoperationsRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords.ExploresolutionHaveadifferentchallenge?Startwithyourrequirements.We’llhelpshapetherightapproach.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Connected solutions | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Startwithyoursite.Connectwhatmatters."
+      ],
+      [
+        "H2",
+        "GasMonitoring"
+      ],
+      [
+        "H2",
+        "HookCam"
+      ],
+      [
+        "H2",
+        "OutriggerMonitoring"
+      ],
+      [
+        "H2",
+        "WorkerTracking"
+      ],
+      [
+        "H2",
+        "SiteVision"
+      ],
+      [
+        "H2",
+        "RFID/AssetTracking"
+      ],
+      [
+        "H2",
+        "Haveadifferentchallenge?"
+      ]
+    ],
+    "links": [
+      [
+        "/solutions/gas-monitoring",
+        "01SitesafetyGasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.Exploresolution"
+      ],
+      [
+        "/solutions/hookcam",
+        "02SitevisibilityHookCamBringconnectedcamerasystemsclosertoliftingoperations.Exploresolution"
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "03SitesafetyOutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.Exploresolution"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "04SitesafetyWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.Exploresolution"
+      ],
+      [
+        "/solutions/site-vision",
+        "05SitevisibilitySiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.Exploresolution"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "06AssetoperationsRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords.Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [
+      [
+        "INPUT",
+        "",
+        "search"
+      ]
+    ],
+    "anchors": []
+  },
+  "/devices": {
+    "text": "DEVICESHardwareisthestart.Integrationmakesitwork.Cameras,sensors,gatewaysandrelatedfieldsystems,supportedbyengineeringfromdeploymenttocommissioning.AlldevicesVisionMonitoringConnectivityIdentificationSearchdevices6devicecategoriesVisionCameras&CCTVFieldcameraswithpositioning,networkandcommissioningsupport.ExploreapplicationVisionHookCamsystemsConnectedcamerasystemsforlifting-operationenvironments.ExploreapplicationMonitoringGassystemsGas-relatedfieldsystemsintegratedaroundsiterequirements.ExploreapplicationConnectivitySensors&gatewaysFieldsensingandgatewaysconnectingdeviceswithoperationalsystems.ExploreapplicationIdentificationRFIDsystemsIdentificationhardwareforconnectedassetworkflows.ExploreapplicationIdentificationWorkerfieldsystemsConnectedfielddevicesforworker-relatedsiteworkflows.ExploreapplicationTherightdevicefortherightconditions.Thisisaguidetoourdevicecategories.Specificmodels,technicalspecificationsandsuitabilityareconfirmedagainstyoursiterequirements.Let’sconnecttherighthardware.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Connected devices | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Hardwareisthestart.Integrationmakesitwork."
+      ],
+      [
+        "H2",
+        "Cameras&CCTV"
+      ],
+      [
+        "H2",
+        "HookCamsystems"
+      ],
+      [
+        "H2",
+        "Gassystems"
+      ],
+      [
+        "H2",
+        "Sensors&gateways"
+      ],
+      [
+        "H2",
+        "RFIDsystems"
+      ],
+      [
+        "H2",
+        "Workerfieldsystems"
+      ],
+      [
+        "H2",
+        "Therightdevicefortherightconditions."
+      ],
+      [
+        "H2",
+        "Let’sconnecttherighthardware."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions/site-vision",
+        "Exploreapplication"
+      ],
+      [
+        "/solutions/hookcam",
+        "Exploreapplication"
+      ],
+      [
+        "/solutions/gas-monitoring",
+        "Exploreapplication"
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "Exploreapplication"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "Exploreapplication"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "Exploreapplication"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [
+      [
+        "INPUT",
+        "",
+        "search"
+      ]
+    ],
+    "anchors": []
+  },
+  "/services": {
+    "text": "SERVICESFromthefirstsurveytoconnectedoperations.ThreewaystoworkwithEmbuilded.Startwithfieldengineering,combineitwithhardware,oraddmanageddeviceandsoftwareservices.01FieldEngineeringPracticalengineering,fromthefirstsitesurveytocommissioningandmaintenance.SitesurveysandcamerapositioningCCTVdeployment,cablingandmountingPoE,4G/5GandLoRaWANnetworkdesignCommissioningandmaintenance02ConnectedHardware+EngineeringFielddevicesandtheengineeringneededtobringthemintoyouroperation.Cameras,sensorsandgatewaysGassystemsandHookCamRFIDandrelatedfieldsystemsSupply,deploymentandsystemintegration03ManagedDevice&SoftwareServicesManageddeviceinfrastructureandsoftwareintegration,builtaroundyourplatform.TRACICloudandlightweightPWADevicehealthandremotediagnosticsOTAanddeviceconfigurationAPI,MQTTandwebhookintegrationApracticalpathfromsitetosystem.DISCOVERUnderstandthefield.Workthroughthesite,operatingobjectivesandexistingsystemstoestablishaclearscope.CONNECTEngineerthesolution.Bringtogetherhardware,connectivity,installationandtherequiredplatformintegration.OPERATEPlanforthelifecycle.Definecommissioning,maintenanceandmanagedserviceresponsibilitiesaroundyouroperation.Startwiththesupportyouneed.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Engineering & managed services | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Fromthefirstsurveytoconnectedoperations."
+      ],
+      [
+        "H3",
+        "FieldEngineering"
+      ],
+      [
+        "H3",
+        "ConnectedHardware+Engineering"
+      ],
+      [
+        "H3",
+        "ManagedDevice&SoftwareServices"
+      ],
+      [
+        "H2",
+        "Apracticalpathfromsitetosystem."
+      ],
+      [
+        "H3",
+        "Understandthefield."
+      ],
+      [
+        "H3",
+        "Engineerthesolution."
+      ],
+      [
+        "H3",
+        "Planforthelifecycle."
+      ],
+      [
+        "H2",
+        "Startwiththesupportyouneed."
+      ]
+    ],
+    "links": [
+      [
+        "/contact?service=Field%20Engineering",
+        ""
+      ],
+      [
+        "/contact?service=Connected%20Hardware%20%2B%20Engineering",
+        ""
+      ],
+      [
+        "/contact?service=Managed%20Device%20%26%20Software%20Services",
+        ""
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": [
+      "field-engineering",
+      "connected-hardware",
+      "managed-services"
+    ]
+  },
+  "/partners": {
+    "text": "PARTNERSKeepyourplatform.Weconnectthefield.Fieldengineering,connecteddevicesandmanagedinfrastructureforsystemintegrators,AIandCCTVpartners,andSSSSand4Sproviders.Let’stalkYourplatformSoftware,workflowsandthecustomerexperienceyourteamalreadydelivers.OurinfrastructureFieldengineering,connectedhardwareandmanageddeviceservicesunderneathit.Choosewherewefit.Engineeringonly.Hardwarewithengineering.Oramanageddeviceservice.Definetheengagementaroundyourdeliverymodel.01FieldEngineeringPracticalengineering,fromthefirstsitesurveytocommissioningandmaintenance.02ConnectedHardware+EngineeringFielddevicesandtheengineeringneededtobringthemintoyouroperation.03ManagedDevice&SoftwareServicesManageddeviceinfrastructureandsoftwareintegration,builtaroundyourplatform.Agreetheinterfaces.Keepresponsibilitiesclear.Alignfieldscope,hardwareresponsibilities,platforminterfacesandongoingsupportbeforedeployment.FielddeliverySitesurvey,camerapositioning,connectivity,cabling,mountingandcommissioning.SystemintegrationScopeAPI,MQTTandwebhookintegrationaroundyourexistingplatform.LifecyclesupportDefinedevicehealth,diagnostics,configurationandmaintenanceresponsibilities.Buildthenextconnectiontogether.Tellusaboutyourplatformandwhereyouneedsupportinthefield.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Partner with Embuilded | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Keepyourplatform.Weconnectthefield."
+      ],
+      [
+        "H2",
+        "Yourplatform"
+      ],
+      [
+        "H2",
+        "Ourinfrastructure"
+      ],
+      [
+        "H2",
+        "Choosewherewefit."
+      ],
+      [
+        "H3",
+        "FieldEngineering"
+      ],
+      [
+        "H3",
+        "ConnectedHardware+Engineering"
+      ],
+      [
+        "H3",
+        "ManagedDevice&SoftwareServices"
+      ],
+      [
+        "H2",
+        "Agreetheinterfaces.Keepresponsibilitiesclear."
+      ],
+      [
+        "H3",
+        "Fielddelivery"
+      ],
+      [
+        "H3",
+        "Systemintegration"
+      ],
+      [
+        "H3",
+        "Lifecyclesupport"
+      ],
+      [
+        "H2",
+        "Buildthenextconnectiontogether."
+      ]
+    ],
+    "links": [
+      [
+        "/contact?service=Partnership",
+        "Let’stalk"
+      ],
+      [
+        "/services#field-engineering",
+        ""
+      ],
+      [
+        "/services#connected-hardware",
+        ""
+      ],
+      [
+        "/services#managed-services",
+        ""
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": [
+      "field-engineering",
+      "connected-hardware",
+      "managed-services"
+    ]
+  },
+  "/industries": {
+    "text": "INDUSTRIESDifferentenvironments.Aconnectedapproach.Bringfieldengineering,connectedhardwareandoperationalintelligencetotheplaceswhereyourteamswork.ConstructionConnectedfieldsystemsforthechangingconditionsofaconstructionsite.Sitevisibility·Connecteddevices·FieldengineeringGasMonitoringHookCamSiteVisionInfrastructureDeviceconnectivityandoperationalevidenceacrossinfrastructureenvironments.Fieldconnectivity·Multi-siteoperations·EvidenceSiteVisionOutriggerMonitoringRFID/AssetTrackingProperty&facilitiesConnectbuildingsystems,assetinformationandday-to-dayoperations.Assetworkflows·Cameras·ManagedservicesRFID/AssetTrackingSiteVisionIndustrialBringfieldhardwareandsystemintegrationintoindustrialoperations.Sensors·Operationalevents·IntegrationGasMonitoringRFID/AssetTrackingWorkerTrackingLet’sunderstandyourenvironment.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Industries | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Differentenvironments.Aconnectedapproach."
+      ],
+      [
+        "H2",
+        "Construction"
+      ],
+      [
+        "H2",
+        "Infrastructure"
+      ],
+      [
+        "H2",
+        "Property&facilities"
+      ],
+      [
+        "H2",
+        "Industrial"
+      ],
+      [
+        "H2",
+        "Let’sunderstandyourenvironment."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions/gas-monitoring",
+        "GasMonitoring"
+      ],
+      [
+        "/solutions/hookcam",
+        "HookCam"
+      ],
+      [
+        "/solutions/site-vision",
+        "SiteVision"
+      ],
+      [
+        "/solutions/site-vision",
+        "SiteVision"
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "OutriggerMonitoring"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "RFID/AssetTracking"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "RFID/AssetTracking"
+      ],
+      [
+        "/solutions/site-vision",
+        "SiteVision"
+      ],
+      [
+        "/solutions/gas-monitoring",
+        "GasMonitoring"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "RFID/AssetTracking"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "WorkerTracking"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": [
+      "construction",
+      "infrastructure",
+      "property-facilities",
+      "industrial"
+    ]
+  },
+  "/about": {
+    "text": "ABOUTEMBUILDEDGroundedinthefield.Connectedbyintelligence.EmbuildedIntelligenceLimitedconnectsfielddevices,operationaldataandevidenceintopracticalsystemsforconstruction,infrastructureandthewiderbuiltenvironment.ArchitecturalconceptEngineeringmeetsconnectedoperations.Ourworkbringstogetherfieldengineering,connectedhardwareintegrationandmanageddeviceservices.TRACIisthetechnologyplatformconnectingdevices,intelligenceandevidence.MeetTRACIOnecompany.Aconnectedfamily.Aclearstructure,fromtheengineeringonsitetotheplatformbehindit.EmbuildedThecompanyTRACIThetechnologyplatformTRACIpluginsModularcapabilitiesDevices&solutionsConnectedfieldsystemsEmbuildedServicesEngineering&managedservicesLet’sbuildthenextconnection.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "About Embuilded | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Groundedinthefield.Connectedbyintelligence."
+      ],
+      [
+        "H2",
+        "Engineeringmeetsconnectedoperations."
+      ],
+      [
+        "H2",
+        "Onecompany.Aconnectedfamily."
+      ],
+      [
+        "H2",
+        "Let’sbuildthenextconnection."
+      ]
+    ],
+    "links": [
+      [
+        "/traci",
+        "MeetTRACI"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/contact": {
+    "text": "LET’STALKEveryconnectionstartswithaconversation.Prepareaprojectbriefwithyoursiterequirements,existingsystemsandthesupportyouneed.Downloadacopytosharewhenyou’reready.Startwithyoursite.Ausefulfirstbriefgivesusthecontexttohaveapracticaldiscussion.TheenvironmentandoperatingchallengeExistingdevicesandplatformsEngineeringorintegrationsupportYourprojectscopeandtimingAlreadyhaveaplatform?Telluswhereyouneedsupportinthefield.Wecandiscussengineering,connectedhardwareormanageddeviceservices.YournameWorkemailCompany/organisationAreaofinterestGeneralprojectFieldEngineeringConnectedHardware+EngineeringManagedDevice&SoftwareServicesTRACIplatformTRACISafetyTRACIVisionTRACIAssetTRACIBCDSTRACISSSSGasMonitoringHookCamOutriggerMonitoringWorkerTrackingSiteVisionRFID/AssetTrackingPartnershipTellusaboutyourprojectWebsiteDownloadprojectbriefYourdetailsstayinthisbrowseruntilyoudownloadyourbrief.Downloadingsavesacopytoyourdevice;itdoesnotsendaninquiry.",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Let’s talk | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "Everyconnectionstartswithaconversation."
+      ],
+      [
+        "H2",
+        "Startwithyoursite."
+      ],
+      [
+        "H2",
+        "Alreadyhaveaplatform?"
+      ]
+    ],
+    "links": [],
+    "fields": [
+      [
+        "INPUT",
+        "name",
+        "text"
+      ],
+      [
+        "INPUT",
+        "email",
+        "email"
+      ],
+      [
+        "INPUT",
+        "company",
+        "text"
+      ],
+      [
+        "SELECT",
+        "service",
+        "select-one"
+      ],
+      [
+        "TEXTAREA",
+        "message",
+        "textarea"
+      ],
+      [
+        "INPUT",
+        "website",
+        "text"
+      ]
+    ],
+    "anchors": [
+      "name",
+      "email",
+      "company",
+      "service",
+      "message",
+      "website"
+    ]
+  },
+  "/solutions/gas-monitoring": {
+    "text": "SolutionsGasMonitoringSITESAFETYGasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.Let’stalk01GassystemsTelemetry&eventsAlerts&evidenceBuiltaroundyouroperation.Bringgasmonitoringintotheconnectedsite.Embuildedcombinesfieldengineering,gassystemsandTRACI'stelemetry,alertandevidencecapabilitiesaroundtheneedsofyourenvironment.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.SiteconditionsandmonitoringobjectivesSensorplacement,connectivityandpowerAlertdestinationsandevidencerequirementsCommissioningandmaintenanceresponsibilitiesConnectthewiderpicture.OutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.ExploresolutionWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.ExploresolutionLet’sscopeyourgasrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Gas Monitoring | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "GasMonitoring"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "OutriggerMonitoring"
+      ],
+      [
+        "H3",
+        "WorkerTracking"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourgasrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=Gas%20Monitoring",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/solutions/hookcam": {
+    "text": "SolutionsHookCamSITEVISIBILITYHookCamBringconnectedcamerasystemsclosertoliftingoperations.Let’stalk02ConnectedcamerasFieldintegrationOperationalvisibilityBuiltaroundyouroperation.Makecameradeploymentpartofaconsideredlifting-operationworkflow.EmbuildedsuppliesandintegratesHookCam-relatedfieldsystems,withengineeringsupportforpositioning,connectivityandcommissioning.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.LiftingenvironmentandcamerapositionNetworkavailabilityandpowerarrangementsViewingandevidenceworkflowsInstallation,commissioningandongoingsupportConnectthewiderpicture.OutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.ExploresolutionSiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.ExploresolutionLet’sscopeyourhookcamrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "HookCam | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "HookCam"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "OutriggerMonitoring"
+      ],
+      [
+        "H3",
+        "SiteVision"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourhookcamrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=HookCam",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/outrigger-monitoring",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/site-vision",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/solutions/outrigger-monitoring": {
+    "text": "SolutionsOutriggerMonitoringSITESAFETYOutriggerMonitoringConnectoutriggermonitoringtothewideroperationalworkflow.Let’stalk03FieldsensorsOperationaleventsRules&workflowsBuiltaroundyouroperation.Developanoutriggermonitoringapproacharoundtheequipment,workingenvironmentandoperationalrequirements.Connectfield-systemeventswiththeappropriateTRACIworkflowsandintegrations.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.EquipmentandmonitoringobjectivesAvailablefieldinterfacesandconnectivityEventhandlingandescalationworkflowsCommissioningandservicerequirementsConnectthewiderpicture.GasMonitoringConnectgasmonitoringwithsitealertsandoperationalevidence.ExploresolutionHookCamBringconnectedcamerasystemsclosertoliftingoperations.ExploresolutionLet’sscopeyouroutriggerrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Outrigger Monitoring | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "OutriggerMonitoring"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "GasMonitoring"
+      ],
+      [
+        "H3",
+        "HookCam"
+      ],
+      [
+        "H2",
+        "Let’sscopeyouroutriggerrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=Outrigger%20Monitoring",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/gas-monitoring",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/hookcam",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/solutions/worker-tracking": {
+    "text": "SolutionsWorkerTrackingSITESAFETYWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.Let’stalk04ConnectedfielddevicesSiteeventsReportingBuiltaroundyouroperation.Planaworkertrackingsystemaroundthesite'soperationalneeds.Embuildedbringstogetherfielddevices,connectivityandintegration,withTRACIsupportingevents,workflowsandreporting.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.OperationalpurposeandsitecoverageDeviceandconnectivityrequirementsAccesscontrolsanddata-handlingrequirementsReportingandplatformintegrationConnectthewiderpicture.SiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.ExploresolutionRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords.ExploresolutionLet’sscopeyourworkerrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Worker Tracking | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "WorkerTracking"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "SiteVision"
+      ],
+      [
+        "H3",
+        "RFID/AssetTracking"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourworkerrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=Worker%20Tracking",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/site-vision",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/rfid-asset-tracking",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/solutions/site-vision": {
+    "text": "SolutionsSiteVisionSITEVISIBILITYSiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.Let’stalk05CCTVengineeringPartnerintegrationEvidencecaptureBuiltaroundyouroperation.ConnectCCTVfieldengineeringwiththesoftwareandAIcapabilitiesyouroperationneeds.Embuildedhandlessitesurveys,camerapositioning,networksandintegration,whilepartnerscanretaintheirownplatforms.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.ViewingobjectivesandcameracoverageCabling,PoEandnetworkdesignAIorplatformintegrationrequirementsEvidenceaccessandmaintenanceConnectthewiderpicture.HookCamBringconnectedcamerasystemsclosertoliftingoperations.ExploresolutionWorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.ExploresolutionLet’sscopeyourvisionrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "Site Vision | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "SiteVision"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "HookCam"
+      ],
+      [
+        "H3",
+        "WorkerTracking"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourvisionrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=Site%20Vision",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/hookcam",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  },
+  "/solutions/rfid-asset-tracking": {
+    "text": "SolutionsRFID/AssetTrackingASSETOPERATIONSRFID/AssetTrackingConnectphysicalassetstousefuloperationalrecords.Let’stalk06RFIDsystemsAsseteventsIntegration&reportingBuiltaroundyouroperation.BringRFIDandrelatedfieldsystemsintoyourassetworkflow.Embuildedcombinesconnectedhardware,siteintegrationandTRACI'seventandreportingcapabilitiestosupportaproject-specificapproach.Hardwareselection,monitoringparametersandintegrationscopeareestablishedduringprojectscoping.Whatwe’llworkthrough.AssettypesandidentificationworkflowReaderplacementandfieldconnectivitySystemintegrationandeventrequirementsDeploymentandlifecyclesupportConnectthewiderpicture.WorkerTrackingConnectworker-relatedfieldeventswithsiteoperations.ExploresolutionSiteVisionPutsitecameras,visualintelligenceandevidenceintocontext.ExploresolutionLet’sscopeyourassetrequirements.Telluswhatishappeningonyoursite.We’llhelpconnectthepieces.Let’stalk",
+    "header": "embuilded.TRACISolutionsDevicesServicesPartnersIndustriesAboutLet’stalk",
+    "footer": "embuilded.Embeddedintelligenceforthebuiltworld.ExploreTRACISolutionsDevicesServicesConnectPartnersIndustriesAboutLet’stalkFIELDTOPLATFORMPracticalsystems.Connectedoperations.©2026EmbuildedIntelligenceLimitedDevices.Intelligence.Evidence.",
+    "title": "RFID / Asset Tracking | Embuilded",
+    "headings": [
+      [
+        "H1",
+        "RFID/AssetTracking"
+      ],
+      [
+        "H2",
+        "Builtaroundyouroperation."
+      ],
+      [
+        "H2",
+        "Whatwe’llworkthrough."
+      ],
+      [
+        "H2",
+        "Connectthewiderpicture."
+      ],
+      [
+        "H3",
+        "WorkerTracking"
+      ],
+      [
+        "H3",
+        "SiteVision"
+      ],
+      [
+        "H2",
+        "Let’sscopeyourassetrequirements."
+      ]
+    ],
+    "links": [
+      [
+        "/solutions",
+        "Solutions"
+      ],
+      [
+        "/contact?service=RFID%20%2F%20Asset%20Tracking",
+        "Let’stalk"
+      ],
+      [
+        "/solutions/worker-tracking",
+        "Exploresolution"
+      ],
+      [
+        "/solutions/site-vision",
+        "Exploresolution"
+      ],
+      [
+        "/contact",
+        "Let’stalk"
+      ]
+    ],
+    "fields": [],
+    "anchors": []
+  }
+}

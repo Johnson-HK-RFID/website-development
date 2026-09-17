@@ -24,7 +24,10 @@ try {
     assert.equal(response.status(),200,route);
     assert.equal(await page.locator("h1").count(),1,`${route}: single h1`);
     assert.ok((await page.title()).includes("Embuilded"),`${route}: title`);
-    for (const image of await page.locator("img").all()) assert.equal(await image.evaluate(img => img.complete && img.naturalWidth > 0),true,`${route}: image loading`);
+    for (const image of await page.locator("img").all()) {
+      await image.scrollIntoViewIfNeeded();
+      assert.equal(await image.evaluate(async img => { try { await img.decode(); return img.naturalWidth > 0; } catch { return false; } }),true,`${route}: image loading`);
+    }
     report.routes.push({path:route,status:response.status(),title:await page.title()});
     for (const href of await page.locator('a[href^="/"]').evaluateAll(links=>links.map(link=>link.getAttribute("href")))) internalLinks.add(href);
     {

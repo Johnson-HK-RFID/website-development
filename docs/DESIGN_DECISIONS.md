@@ -4,9 +4,11 @@
 
 An engineering-led corporate website for built-world operators and integration partners. The layout prioritizes clear commercial options, structured technical information and a consistent route from site requirements to discussion.
 
-The source documents define company positioning and content architecture but do not specify a visual identity. Ink, off-white, muted green and a safety-orange action color are proposed review choices. Manrope provides the main typography; IBM Plex Mono distinguishes concise technical labels. The wordmark is a provisional typographic treatment, not an assertion of an approved corporate logo.
+The source documents define company positioning and content architecture but do not specify a visual identity. Following the user's visual-overhaul request, the current proposal uses graphite, cool white, silver surfaces and one blue accent. Self-hosted Geist provides display and body typography through `next/font/local`. The existing Manrope wordmark and its geometry are retained. This remains a provisional identity pending company review.
 
-`DESIGN_VARIANCE: 6`, `MOTION_INTENSITY: 3`, `VISUAL_DENSITY: 4`. Motion is limited to brief hover feedback and ordinary scrolling, with reduced-motion support. Buttons use small radii, panels remain square, and circular controls are reserved for compact row actions.
+`DESIGN_VARIANCE: 7`, `MOTION_INTENSITY: 3`, `VISUAL_DENSITY: 3`. Motion is limited to brief interaction feedback and ordinary scrolling, with reduced-motion support. Controls use a consistent 2-pixel radius; content uses open layouts and square surfaces. Color tokens follow the system light/dark preference, with one consistent theme throughout each page. Both themes have been checked for contrast.
+
+See [UI_REDESIGN.md](UI_REDESIGN.md) for the audit and redesign decisions. The user explicitly required all existing text and content structure to remain intact; a rendered-content baseline checks that constraint across all 15 routes.
 
 ## Source mapping
 
@@ -26,8 +28,9 @@ The architectural image is an AI-generated concept, identified as such in its vi
 - Generation method: built-in image generation tool.
 - Original saved asset: `website/public/images/built-world-concept.png`.
 - Web asset: `website/public/images/built-world-concept.webp`, 1536 × 1024, quality 82, 272,032 bytes.
-- Icons: Phosphor.
-- TRACI diagram: semantic HTML and library icons based on the source device/intelligence/evidence architecture. It is a conceptual system explanation, not an operational dashboard.
+- Icons: compact, regular-weight Phosphor SVGs for controls and specific device categories. Large decorative broadcasting, document, layered-stack and person glyphs have been removed. The existing logo geometry is rendered as an SVG.
+- TRACI diagram: semantic HTML labels with SVG connections based on the source device/intelligence/evidence architecture. It is a conceptual system explanation, not an operational dashboard. The central intelligence stage connects to the partner-platform interface below.
+- The existing concept image is presented in a wide architectural crop with reduced saturation in CSS. Its unchanged caption sits below the image.
 
 ### Image prompt
 

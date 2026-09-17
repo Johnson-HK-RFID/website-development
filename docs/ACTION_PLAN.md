@@ -24,6 +24,8 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ## Current activity
 
+The user requested a complete visual redesign while retaining all text, structure and functionality. Implementation and screenshot review are complete. The 15-route content comparison, 40 responsive checks and 20 light/dark accessibility audits passed. Production verification and publication are in progress. The audit and decisions are recorded in [UI_REDESIGN.md](UI_REDESIGN.md); the earlier delivery below remains the baseline.
+
 The implementation is delivered to `main`. Commit [`e23a97c`](https://github.com/Johnson-HK-RFID/website-development/commit/e23a97c66eaccca4c56759e54294180b47ac744d) was pushed and its remote hash verified. The [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35172276874) passed installation, linting, seven unit tests, production build, type checking, source preservation and browser checks on Linux.
 
 Final local browser tests verified 15 routes, 40 viewport/page combinations, 39 internal destinations and the main interactions, with no automated WCAG A/AA violations. The native image packaging fix was verified: the requested 640-pixel image is 40,461 bytes rather than the unresized 272,032-byte original. All four source documents remain unchanged, including their committed Git blobs. See [VERIFICATION.md](VERIFICATION.md) for evidence and limits.
@@ -35,8 +37,8 @@ The next review concerns approved company content, final branding and deployment
 - Next.js App Router, TypeScript, Tailwind CSS and structured content.
 - English public copy for the first review, based on the source drafts; additional locales remain a future decision.
 - Design interpretation: an engineering-led corporate site for built-world operators and integration partners, with precise typography, restrained motion and useful system diagrams.
-- `DESIGN_VARIANCE: 6`, `MOTION_INTENSITY: 3`, `VISUAL_DENSITY: 4`.
-- Provisional visual palette: ink, off-white and safety orange. These are review choices, not existing approved brand assets.
+- Current redesign: `DESIGN_VARIANCE: 7`, `MOTION_INTENSITY: 3`, `VISUAL_DENSITY: 3`.
+- Provisional visual palette: graphite, cool white, silver and a blue accent; system light/dark modes share the same layout and hierarchy. These are review choices, not existing approved brand assets.
 - No fabricated customers, installations, certifications, device specifications or outcome statistics.
 - Case-study content requires approved source material. A composed empty state will distinguish this from published case studies.
 - Contact delivery requires a real destination. Provide a functional project-brief download without credentials, plus a server-validated delivery integration when configured. Never report a sent message without delivery confirmation.

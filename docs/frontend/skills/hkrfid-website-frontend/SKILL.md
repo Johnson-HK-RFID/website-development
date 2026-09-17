@@ -60,6 +60,18 @@ These rules retain the useful design discipline of the reference while fitting t
 
 ## Implementation boundaries
 
+### Current visual-overhaul constraint
+
+The user has explicitly authorized a full redesign of the delivered application while retaining all copy, section order, URLs and behavior. This permits editing application files in `website/`; the protected requirement snapshots remain unchanged. Apply the upstream taste-skill redesign protocol directly and use [UI_REDESIGN.md](../../../UI_REDESIGN.md) as the current visual decision record.
+
+- Preserve the rendered content baseline, heading order, field order, anchors and metadata.
+- Use the graphite/cool-white/silver/blue token system and Geist typography, retaining the existing wordmark geometry and typeface.
+- Reserve compact SVG icons for actual controls and recognizable device categories. Do not reintroduce decorative emoji, large generic document/person/broadcast glyphs, fake waveforms or dashboard-like illustrations.
+- Use semantic diagram labels and SVG connections to explain relationships. A system diagram is not a product screenshot or evidence of live operational data.
+- Review the actual rendered desktop, 960-pixel tablet and mobile screens, including both system color schemes. Passing automated checks alone does not establish visual quality.
+
+### Technical boundaries
+
 - Evaluate Next.js App Router and TypeScript against the existing project before scaffolding. If adding files at the root would modify originals, choose an unused application directory and document its commands.
 - Check declared dependencies and compatible versions before imports. Prefer a coherent existing component and icon family rather than adding competing libraries.
 - Default presentation to Server Components and isolate interactive client code. Add state, animation libraries and backend services only when the confirmed flow requires them.

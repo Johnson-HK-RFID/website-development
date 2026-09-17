@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  agentRules: false,
   // Include native image libraries that are loaded dynamically by Sharp.
   outputFileTracingIncludes: { "/*": ["./node_modules/@img/sharp-*/**/*"] },
   poweredByHeader: false,

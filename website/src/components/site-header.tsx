@@ -7,7 +7,7 @@ import { ArrowUpRight, List, X } from "@phosphor-icons/react";
 import { navigation } from "@/content/site";
 
 export function Brand({ inverse = false }: { inverse?: boolean }) {
-  return <Link href="/" className={`brand${inverse ? " brand-inverse" : ""}`} aria-label="Embuilded home"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span><span>embuilded<span className="brand-period">.</span></span></Link>;
+  return <Link href="/" className={`brand${inverse ? " brand-inverse" : ""}`} aria-label="Embuilded home"><svg className="brand-mark" viewBox="0 0 23 23" fill="currentColor" aria-hidden="true"><rect width="23" height="5" /><rect y="9" width="16.56" height="5" /><rect y="18" width="23" height="5" /></svg><span>embuilded<span className="brand-period">.</span></span></Link>;
 }
 
 export function SiteHeader() {

@@ -1,5 +1,11 @@
 # Verification Record
 
+## Visual redesign review
+
+The subsequent visual overhaul preserves the first implementation's content. A versioned fixture records main, header and footer text, heading order, links, form fields, anchors and titles across all 15 routes. The redesigned pages passed comparison against that fixture. Forty layout checks covered 375, 768, 960 and 1440 pixels. Twenty light/dark accessibility audits found no WCAG A/AA violations. The production build, lint checks and seven inquiry tests passed; final production browser and performance checks are in progress.
+
+The interface now uses self-hosted Geist, a graphite/cool-white/blue palette, a wide architectural hero, compact functional SVGs and a typographic architecture diagram. See [UI_REDESIGN.md](UI_REDESIGN.md) for the audit, constraints and current status. The original implementation results below remain a historical baseline.
+
 ## Scope
 
 Local verification covers the first implementation of the Embuilded corporate website: nine main pages, six solution pages, catalogs, navigation, metadata and the inquiry workflow. Tests ran against the production standalone server on Windows with Node.js 24.21.0 and Chrome 152.0.7977.83. This record was updated on 17 September 2026.
