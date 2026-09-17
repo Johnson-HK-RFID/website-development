@@ -1,6 +1,6 @@
 # Embuilded Requirements Traceability
 
-Status: first implementation complete and functionally verified; GitHub delivery in progress.
+Status: first implementation verified and delivered to GitHub main; local and GitHub Actions checks passed.
 
 ## Source baseline
 
@@ -42,7 +42,7 @@ Implementation lives in `website/src/app/`, with reusable content in `website/sr
 | USER-002 | Preserve original source files. | Original ZIP retained locally; all four extracted source files match their recorded SHA-256 checksums. The source repository has not been modified. |
 | USER-004 | Prefer Next.js. | Also recommended in Tasks / Phase 3. |
 | USER-005 | Adapt taste-skill to the project. | Original snapshot retained; source-specific workflow and the implemented visual decisions are documented. Final brand approval remains open. |
-| USER-006 | New deliverables may be pushed to the repository. | Delivery target is Johnson-HK-RFID/website-development; main is authorized. Authenticated inspection confirms an empty repository and ADMIN access. |
+| USER-006 | New deliverables may be pushed to the repository. | Delivered to the authorized main branch in Johnson-HK-RFID/website-development. Remote commit verified and GitHub Actions passed. |
 
 ## Open decisions
 
@@ -52,6 +52,5 @@ Implementation lives in `website/src/app/`, with reusable content in `website/sr
 | Content completeness | Case studies, device specifications, About copy, contact details and solution/plugin descriptions. |
 | Website locales | Supported languages and default locale are not specified. |
 | Integration details | Domain, analytics provider, form delivery destination and staging configuration. |
-| GitHub delivery | Authenticated inspection confirms an empty target repository with no refs. Write access is established; push and remote commit verification are in progress. |
 
 When additional evidence arrives, append its source and update the corresponding decision without rewriting the preserved drafts.

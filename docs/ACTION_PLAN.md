@@ -19,11 +19,16 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 - [x] Add metadata, sitemap, deployment configuration and operating instructions.
 - [x] Verify source preservation, content, accessibility, responsive layout and production build.
 - [x] Commit the website, preserved references and delivery documentation.
-- [ ] Push to main and verify the remote commit.
+- [x] Push to main and verify the remote commit.
+- [x] Verify the GitHub Actions workflow on the delivered implementation.
 
 ## Current activity
 
-Implementation and functional verification are complete. All seven inquiry unit tests passed. Browser tests verified 15 routes, 40 viewport/page combinations, 39 internal destinations and the main interactions, with no automated WCAG A/AA violations. Color contrast findings were corrected. A final performance audit identified a missing native image library in the Windows standalone build; the build now explicitly includes these libraries and an image-resizing regression check. The final production package is being rechecked before push. GitHub authentication is complete and the empty target repository is verified. See [VERIFICATION.md](VERIFICATION.md) for the verification record.
+The implementation is delivered to `main`. Commit [`e23a97c`](https://github.com/Johnson-HK-RFID/website-development/commit/e23a97c66eaccca4c56759e54294180b47ac744d) was pushed and its remote hash verified. The [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35172276874) passed installation, linting, seven unit tests, production build, type checking, source preservation and browser checks on Linux.
+
+Final local browser tests verified 15 routes, 40 viewport/page combinations, 39 internal destinations and the main interactions, with no automated WCAG A/AA violations. The native image packaging fix was verified: the requested 640-pixel image is 40,461 bytes rather than the unresized 272,032-byte original. All four source documents remain unchanged, including their committed Git blobs. See [VERIFICATION.md](VERIFICATION.md) for evidence and limits.
+
+The next review concerns approved company content, final branding and deployment configuration. The local production preview is available through `npm start`; no public hosting deployment has been performed.
 
 ## Decisions
 

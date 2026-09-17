@@ -22,14 +22,18 @@ Local verification covers the first implementation of the Embuilded corporate we
 | Error and preview behavior | Custom 404 and preview indexing controls verified. |
 | Browser runtime | No uncaught browser errors recorded. |
 | Source preservation | All four source requirement files match the manifest SHA-256 hashes; staged source blobs were also checked. |
+| Standalone image optimization | Passed: a 640-pixel request returns a 640-pixel, 40,461-byte WebP instead of the 272,032-byte original. |
+| GitHub verification | [Workflow 35172276874](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35172276874) passed all checks on Linux for implementation commit `e23a97c66eaccca4c56759e54294180b47ac744d`. |
 
-The browser report and review screenshots are generated under `.artifacts/browser/`, outside version control. Automated accessibility results do not constitute a complete manual accessibility certification.
+The browser report and review screenshots are generated under `.artifacts/browser/`, outside version control; CI also uploads its browser report as a workflow artifact. Automated accessibility results do not constitute a complete manual accessibility certification.
 
 ## Performance review
 
 The initial mobile Lighthouse run scored 77 for performance, 100 for accessibility, 100 for best practices and 66 for SEO. Its only failing SEO audit was the intentional preview `noindex` directive. The run reported FCP 1.2 seconds, LCP 3.9 seconds, TBT 430 milliseconds and CLS 0.002. Lighthouse also warned that the host CPU was slower than its expected baseline; these are local simulated measurements, not production field data.
 
 The audit exposed a real packaging issue: the Windows standalone output omitted Sharp's dynamically loaded DLLs and silently served the original 272,032-byte image. The build now explicitly includes native image dependencies, and the hero image has a high fetch priority and corrected responsive sizing. A browser regression check verifies that the image endpoint returns an actual 640-pixel image. This follows the [Next.js standalone file-tracing guidance](https://nextjs.org/docs/app/api-reference/config/next-config-js/output).
+
+The repeat mobile audit after the fix scored **83 performance, 100 accessibility, 100 best practices and 66 SEO**. FCP was 1.2 seconds, LCP 3.0 seconds, TBT 470 milliseconds and CLS 0.002. LCP request discovery passed, and estimated image-delivery savings dropped to 4 KiB. Reports are saved as `.artifacts/lighthouse-final.report.json` and `.html`. Further performance review should focus on main-thread work and be repeated on staging; the current simulated LCP and TBT leave room for improvement. Preview indexing remains deliberately disabled.
 
 ## Reproduction
 

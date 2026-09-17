@@ -1,6 +1,6 @@
 # Embuilded Website Requirements Supplement
 
-Status: first implementation completed and functionally verified; GitHub delivery in progress. Final brand assets and operational configuration remain open.
+Status: first implementation verified and delivered to GitHub main. Final brand assets and operational configuration remain open.
 
 ## 1. Source baseline
 
@@ -105,4 +105,4 @@ The application in `website/` implements the nine main pages, six solution detai
 
 The production build, seven inquiry tests, linting, 15-route browser checks, 40 responsive layout checks and automated accessibility checks passed. Corrected findings include color contrast and native image libraries missing from the standalone build. See [VERIFICATION.md](VERIFICATION.md) for evidence and limits, and [ACTION_PLAN.md](ACTION_PLAN.md) for delivery status.
 
-The user's delivery target is now `Johnson-HK-RFID/website-development`, with `main` explicitly authorized for the new empty repository. The original source repository remains the requirements baseline. No live deployment has been performed. Authenticated inspection confirms an empty target repository and ADMIN access; push and remote verification are in progress.
+The user's delivery target is `Johnson-HK-RFID/website-development`, with `main` explicitly authorized. The implementation was pushed to that initially empty repository, its remote commit verified, and its GitHub Actions checks passed. The original source repository remains the requirements baseline. No live hosting deployment has been performed.
