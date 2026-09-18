@@ -4,6 +4,10 @@ Status: implementation and visual redesign verified and delivered to GitHub main
 
 ## 1. Source baseline
 
+### Subsequent user direction, 18 September 2026
+
+Add English and Traditional Chinese; preserve existing English business copy and routes. Reference the five supplied construction websites for visual hierarchy, use building-construction imagery rather than bridges or roads, and replace blue/purple accents with neutral surfaces and restrained construction orange. These explicit additions supersede earlier presentation assumptions without modifying the source drafts. See [BUILDING_DESIGN.md](BUILDING_DESIGN.md).
+
 This supplement records the requirements in the user-provided `Embuilded-website--main.zip`. The original documents are preserved in the [source reference directory](../references/README.md).
 
 | Source | Coverage |
@@ -86,7 +90,7 @@ Deployment tasks include a separate Zeabur website project, GitHub connection, p
 - Homepage, TRACI, Services, Partners, solution and About copy has been drafted from the source documents and requires company review.
 - Devices, About and Contact have initial routes but limited detailed content requirements.
 - Actual case studies, product specifications, approved imagery, contact details and form delivery destination are not provided.
-- Public website languages, domain value and analytics provider are not specified.
+- The source did not specify website languages; the user subsequently requested English and Chinese. English and Traditional Chinese are implemented. Domain value and analytics provider remain unspecified.
 - Detailed BCDS and SSSS plugin claims require further source material. The homepage-to-solution-page mapping is recorded in [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md).
 
 Do not invent evidence, performance claims, customers, certifications, contact details or completed integrations to fill these gaps.

@@ -24,6 +24,30 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ## Current activity
 
+### Building-construction direction and bilingual delivery — 18 September 2026
+
+Latest user direction supersedes the previous blue palette and bridge/dam selection. Reference Suffolk, McCownGordon, Layton, Turner and Holder for composition and typography. Use building construction imagery, neutral surfaces and a restrained construction-orange accent. Add complete English and Traditional Chinese experiences while preserving existing English routes and business meaning.
+
+- [x] Inspect the five reference homepages; capture four rendered references (McCownGordon blocks automated visual access).
+- [x] Replace the bridge/dam photo proposal with individually licensed building-construction photographs.
+- [x] Implement the revised visual system and responsive building-led hero.
+- [x] Add locale routing, complete Traditional Chinese copy, language navigation, localized metadata, catalog and inquiry behavior.
+- [x] Verify both languages, visual layouts, media/motion, accessibility and protected source preservation.
+- [ ] Update documentation, commit and push to the authorized delivery repository.
+
+The earlier photography proposal below is superseded and was not delivered as a completed change.
+
+### Engineering photography and restrained motion — in progress
+
+User requested suitable open-license engineering imagery and purposeful animation. Preserve existing copy, section order, routes and behavior. Use the established taste-skill interpretation (variance 7, motion 3, density 3).
+
+- [x] Research four CC0 engineering photographs and inspect their source licenses.
+- [x] Optimize and integrate local photographs into industry navigation and industry applications.
+- [x] Add short, once-per-entry photo and TRACI connection animations with reduced-motion and no-JavaScript fallbacks.
+- [ ] Verify responsive crops, image delivery, content preservation, accessibility and production behavior.
+- [ ] Update source credits, verification records and push the reviewed changes to main.
+
+
 The requested visual redesign is complete and delivered while retaining all text, structure and functionality. The 15-route content comparison, 40 responsive checks and 20 light/dark accessibility audits passed. Redesign commit [`7e6a9d8`](https://github.com/Johnson-HK-RFID/website-development/commit/7e6a9d82722c96b312a4573702b6ef45cf777f59) is delivered to `main`; the [GitHub Actions run](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35176110208) passed all checks. Final local production browser checks also passed. The local preview runs at `http://localhost:3000`.
 
 The mobile Lighthouse performance score is 90, with accessibility and best practices at 100. Deployment-level performance remains an external validation item. The audit, visual decisions and preview screenshots are recorded in [UI_REDESIGN.md](UI_REDESIGN.md). The earlier delivery below remains the baseline.

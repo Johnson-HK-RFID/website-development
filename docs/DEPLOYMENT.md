@@ -4,7 +4,31 @@
 
 Delivery repository: `Johnson-HK-RFID/website-development`.
 
-The Next.js application lives in `website/`. Use that directory as the service root. Keep this website in a separate Zeabur project and deployment from TRACI production.
+The Next.js application lives in `website/`. Use that directory as the project root. The user selected Vercel for the current deployment. Keep the corporate website separate from TRACI production; the existing Zeabur/container option remains available.
+
+## Vercel deployment
+
+Import `Johnson-HK-RFID/website-development` from GitHub and select these settings:
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Framework preset | Next.js |
+| Root directory | `website` |
+| Node.js version | 24.x |
+| Install command | `npm ci` |
+| Build command | `npm run build` |
+| Output directory | Keep the Next.js default; do not enter `out` or `.next/standalone` |
+
+Vercel manages the Next.js runtime; no start command or Dockerfile is needed. The standalone output remains for local/container previews. Standard Next.js routes, rewrites and image optimization use Vercel's framework integration. See [Next.js on Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs) and [build configuration](https://vercel.com/docs/builds/configure-a-build).
+
+`website/vercel.json` records the framework and install/build commands. Node 24.x is pinned in `package.json`. Root Directory is a Vercel project setting and must still be selected as `website` when importing the repository.
+
+Set `SITE_URL` to the actual HTTPS deployment domain and initially set `SITE_INDEXABLE=false`. Once the approved domain and launch content are ready, update `SITE_URL`, set `SITE_INDEXABLE=true` for Production and redeploy. Leave Preview indexing disabled. If the final domain is not known during the first build, the visual preview works, but the generated metadata must be rebuilt with the real domain before launch.
+
+Optional contact variables are listed below. Without them, the form downloads a project brief and does not send an inquiry. No secret values belong in GitHub or `NEXT_PUBLIC_*` variables.
+
+After deployment, check `/`, `/zh-HK`, `/solutions/gas-monitoring`, `/zh-HK/solutions/gas-monitoring`, language switching, mobile navigation, optimized images and the project-brief download. Repository verification does not replace this check against the actual Vercel URL.
 
 ## Local development and preview
 
@@ -38,7 +62,7 @@ The Dockerfile uses Node.js 24 and a non-root runtime user. A container build an
 
 | Variable | Purpose | Default behavior |
 | --- | --- | --- |
-| `SITE_URL` | Public origin used by canonical metadata and sitemap | No canonical URLs or sitemap entries when absent; social-image base falls back to local preview |
+| `SITE_URL` | Public origin used by canonical metadata and sitemap | Canonical/social-image base falls back to localhost and sitemap is empty; set the real origin and rebuild before launch |
 | `SITE_INDEXABLE` | Set exactly `true` only for a launch-ready production build | Robots excludes crawling and metadata uses noindex |
 | `CONTACT_WEBHOOK_URL` | Approved HTTPS endpoint for inquiry delivery | Sending unavailable; visitors can download a project brief |
 | `CONTACT_WEBHOOK_TOKEN` | Server-only bearer credential for that endpoint | Sending remains unavailable without a nonempty token |

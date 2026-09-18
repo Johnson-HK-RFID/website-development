@@ -4,6 +4,14 @@ Status: implementation and visual redesign verified and delivered to GitHub main
 
 ## Source baseline
 
+### Explicit user additions, 18 September 2026
+
+| ID | Requirement | Implementation and acceptance |
+| --- | --- | --- |
+| USER-018 | Building construction imagery; no blue/purple visual identity; reference five construction websites | [Building design record](BUILDING_DESIGN.md), local CC0 building photographs, neutral/orange tokens, rendered responsive review |
+| USER-019 | English and Chinese website | Fifteen English routes and fifteen Traditional Chinese equivalents; language control, localized metadata, search, validation and brief downloads; `test:i18n` |
+| USER-020 | Preserve existing content and protected originals | Original English content fixture retained with explicit photo/language-control allowances; source checksum verification |
+
 Source: user-provided `Embuilded-website--main.zip`, extracted into snapshot `aa55356c7615`. The archive label is `main`; its remote commit is unknown. Use the [source manifest](../references/website-requirements/aa55356c7615/source-manifest.json) to identify the reviewed artifact.
 
 - **Strategy:** [WEBSITE_STRATEGY.md](../references/website-requirements/aa55356c7615/source/Embuilded-website--main/WEBSITE_STRATEGY.md)
@@ -50,7 +58,7 @@ Implementation lives in `website/src/app/`, with reusable content in `website/sr
 | --- | --- |
 | Visual identity | Approved logo, colors, typography, diagrams and imagery; source design-system tasks are unfinished. |
 | Content completeness | Case studies, device specifications, About copy, contact details and solution/plugin descriptions. |
-| Website locales | Supported languages and default locale are not specified. |
+| Website locales | Resolved by the 18 September user instruction: English default and Traditional Chinese (Hong Kong). |
 | Integration details | Domain, analytics provider, form delivery destination and staging configuration. |
 
 When additional evidence arrives, append its source and update the corresponding decision without rewriting the preserved drafts.

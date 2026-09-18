@@ -26,7 +26,7 @@ try {
     assert.ok((await page.title()).includes("Embuilded"),`${route}: title`);
     for (const image of await page.locator("img").all()) {
       await image.scrollIntoViewIfNeeded();
-      assert.equal(await image.evaluate(async img => { try { await img.decode(); return img.naturalWidth > 0; } catch { return false; } }),true,`${route}: image loading`);
+      assert.equal(await image.evaluate(async img => { try { await Promise.race([img.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + img.src)), 15000))]); return img.naturalWidth > 0; } catch { return false; } }),true,`${route}: image loading`);
     }
     report.routes.push({path:route,status:response.status(),title:await page.title()});
     for (const href of await page.locator('a[href^="/"]').evaluateAll(links=>links.map(link=>link.getAttribute("href")))) internalLinks.add(href);
@@ -36,7 +36,7 @@ try {
     }
   }
   const optimizedImage = await page.evaluate(async () => {
-    const response = await fetch("/_next/image?url=%2Fimages%2Fbuilt-world-concept.webp&w=640&q=75");
+    const response = await fetch("/_next/image?url=%2Fimages%2Findustries%2Fconstruction.webp&w=640&q=75");
     const blob = await response.blob();
     const bitmap = await createImageBitmap(blob);
     const result = { status: response.status, width: bitmap.width, bytes: blob.size };

@@ -27,7 +27,7 @@ Read the [requirements supplement](../../../requirements-draft.md) and [traceabi
 ## Project constraints
 
 - Use existing drafts in `HKRFID-HQ/Embuilded-website-` as the content and functionality baseline. Later explicit user clarifications take precedence and must be recorded.
-- Derive public website locales from the source requirements.
+- Support English and Traditional Chinese (Hong Kong), as explicitly requested on 18 September 2026. Preserve English URLs and use `/zh-HK` for Chinese equivalents.
 - Preserve all original remote paths, file contents and modes. Add supplemental documents and application files at unused paths; do not translate, rename or edit original files in place.
 - The assistant-authored local planning draft may be updated as requested. It is not an original remote source document.
 - The user has authorized pushing new deliverables. Use the preservation checks below without asking for the same authorization again. Authentication and actual repository permissions still have to work.
@@ -65,10 +65,14 @@ These rules retain the useful design discipline of the reference while fitting t
 The user has explicitly authorized a full redesign of the delivered application while retaining all copy, section order, URLs and behavior. This permits editing application files in `website/`; the protected requirement snapshots remain unchanged. Apply the upstream taste-skill redesign protocol directly and use [UI_REDESIGN.md](../../../UI_REDESIGN.md) as the current visual decision record.
 
 - Preserve the rendered content baseline, heading order, field order, anchors and metadata.
-- Use the graphite/cool-white/silver/blue token system and Geist typography, retaining the existing wordmark geometry and typeface.
+- Follow [BUILDING_DESIGN.md](../../../BUILDING_DESIGN.md), which supersedes the earlier blue direction: neutral black, concrete grey, white and restrained construction orange. Use Barlow Condensed for English display headings, Geist for body copy and readable system Traditional Chinese fallbacks. Retain the existing wordmark geometry and typeface.
+- Reference the photographic scale, typography hierarchy and project-led composition of the five construction websites supplied by the user. Do not copy their proprietary fonts, logos, imagery or claims.
+- Prioritize building construction, cranes, scaffolding and high-rise structures. Do not use bridge or road photography as the primary engineering identity.
 - Reserve compact SVG icons for actual controls and recognizable device categories. Do not reintroduce decorative emoji, large generic document/person/broadcast glyphs, fake waveforms or dashboard-like illustrations.
 - Use semantic diagram labels and SVG connections to explain relationships. A system diagram is not a product screenshot or evidence of live operational data.
 - Review the actual rendered desktop, 960-pixel tablet and mobile screens, including both system color schemes. Passing automated checks alone does not establish visual quality.
+- The user has requested open-license engineering photography. Follow [PHOTOGRAPHY.md](../../../PHOTOGRAPHY.md): use individually verified CC0 sources, local responsive assets and accurate scene descriptions; preserve source and license records. New photography may add captions and source credits without rewriting existing business copy.
+- Keep motion at intensity 3: once-per-visit entrances and explanatory connection sequences. Honor reduced motion, retain visible server-rendered content, and avoid perpetual or simulated-live animation.
 
 ### Technical boundaries
 

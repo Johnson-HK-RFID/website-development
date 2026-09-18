@@ -1,5 +1,29 @@
 # Verification Record
 
+## Building construction and bilingual release — 18 September 2026
+
+Current design: [BUILDING_DESIGN.md](BUILDING_DESIGN.md). The earlier blue redesign and its Lighthouse scores below are historical results, not measurements of this release.
+
+| Check | Result |
+| --- | --- |
+| ESLint | Passed after the bilingual implementation and test additions |
+| TypeScript and production build | Passed the final production build; locale pages are prerendered, with dynamic contact and global 404 responses |
+| Inquiry unit tests | Seven passed |
+| English content preservation | All fifteen routes matched the retained baseline, with explicit allowances for photo captions and language navigation |
+| Chinese routes and metadata | Fifteen routes passed, including canonical/alternate links and localized navigation |
+| Chinese responsive layouts | Twenty-four page/viewport combinations passed at 375, 768, 960 and 1440 pixels |
+| Chinese accessibility | Eight light/dark WCAG A/AA audits passed with no automated violations |
+| Bilingual interactions | Language switching preserved route/query/fragment; Chinese catalog search, client navigation, validation and downloaded brief passed |
+| No-JavaScript locale behavior | Chinese server content and language links passed |
+| Photography and motion | Four asset hashes, eight responsive photo layouts and four light/dark accessibility audits passed; image credits, local delivery, one-shot motion, reduced motion and no-JavaScript fallbacks passed |
+| English browser regression | Fifteen routes, forty responsive layouts and fifty-four internal destinations passed; no automated WCAG A/AA violations or browser runtime errors |
+| Localized 404 response | English and Chinese unknown paths and unknown solution slugs return HTTP 404 with complete localized HTML |
+| Protected requirements | All four source files matched the recorded SHA-256 baseline |
+
+Manual review covered the building-led desktop opening, Chinese mobile opening and full Chinese TRACI page. The review identified and corrected oversized Chinese footer labels. Representative captures are linked from the design record. Photography license evidence and processed-file hashes are recorded in the manifest.
+
+Vercel configuration and import instructions are included. No live Vercel deployment or webhook delivery is claimed; those depend on the user's project/domain and approved inquiry endpoint. Automated accessibility checks supplement, rather than replace, manual assistive-technology review. No new Lighthouse score is claimed for this release.
+
 ## Visual redesign review
 
 The subsequent visual overhaul preserves the first implementation's content. A versioned fixture records main, header and footer text, heading order, links, form fields, anchors and titles across all 15 routes. The redesigned pages passed comparison against that fixture. Forty layout checks covered 375, 768, 960 and 1440 pixels. Twenty light/dark accessibility audits found no WCAG A/AA violations. The production build, lint checks and seven inquiry tests passed. [GitHub Actions run 35176110208](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35176110208) passed all checks for implementation commit `7e6a9d82722c96b312a4573702b6ef45cf777f59`, including production browser checks and content preservation.

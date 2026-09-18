@@ -1,5 +1,7 @@
 # Visual Redesign
 
+Historical record: the palette, typography and hero decisions below were superseded on 18 September 2026 by [BUILDING_DESIGN.md](BUILDING_DESIGN.md). The preserved-content baseline continues to apply.
+
 ## Brief and preservation boundary
 
 The user requested a complete visual overhaul while retaining every existing text, page, content section and interaction. The reference is the preserved upstream taste-skill, especially its brief inference, redesign protocol, typography, icon, layout and anti-template guidance.

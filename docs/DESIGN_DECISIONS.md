@@ -1,10 +1,14 @@
 # Design and Content Decisions
 
+## Building construction and bilingual presentation — 18 September 2026
+
+The latest user direction replaces blue accents and generated hero imagery with neutral surfaces, construction orange, Barlow Condensed display headings and real building-site photography. English and Traditional Chinese share the preserved page structure. Read [BUILDING_DESIGN.md](BUILDING_DESIGN.md) for reference analysis and locale behavior, and [PHOTOGRAPHY.md](PHOTOGRAPHY.md) for sources and motion.
+
 ## Direction
 
 An engineering-led corporate website for built-world operators and integration partners. The layout prioritizes clear commercial options, structured technical information and a consistent route from site requirements to discussion.
 
-The source documents define company positioning and content architecture but do not specify a visual identity. Following the user's visual-overhaul request, the current proposal uses graphite, cool white, silver surfaces and one blue accent. Self-hosted Geist provides display and body typography through `next/font/local`. The existing Manrope wordmark and its geometry are retained. This remains a provisional identity pending company review.
+The source documents define company positioning and content architecture but do not specify a visual identity. The current presentation uses graphite, off-white, concrete grey and construction orange. Self-hosted Barlow Condensed provides English display typography; Geist and system CJK fonts provide body and Chinese typography. The Manrope wordmark and its geometry are retained. The user supplied the reference direction; final brand approval remains a company decision.
 
 `DESIGN_VARIANCE: 7`, `MOTION_INTENSITY: 3`, `VISUAL_DENSITY: 3`. Motion is limited to brief interaction feedback and ordinary scrolling, with reduced-motion support. Controls use a consistent 2-pixel radius; content uses open layouts and square surfaces. Color tokens follow the system light/dark preference, with one consistent theme throughout each page. Both themes have been checked for contrast.
 
@@ -23,7 +27,7 @@ See [UI_REDESIGN.md](UI_REDESIGN.md) for the audit and redesign decisions. The u
 
 ## Visual assets
 
-The architectural image is an AI-generated concept, identified as such in its visible caption. It is not a photograph of an Embuilded installation or evidence of company work.
+The live website uses the credited CC0 photographs recorded in [PHOTOGRAPHY.md](PHOTOGRAPHY.md). The earlier generated architectural asset is retained in the repository for history but is no longer displayed. Its historical generation record follows.
 
 - Generation method: built-in image generation tool.
 - Original saved asset: `website/public/images/built-world-concept.png`.

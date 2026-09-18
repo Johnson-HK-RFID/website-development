@@ -21,7 +21,8 @@ export function validateInquiry(input: unknown, requireConsent = true): Validati
   return Object.keys(errors).length ? { ok: false, errors } : { ok: true, value: result };
 }
 
-export function projectBrief(inquiry: Inquiry) {
+export function projectBrief(inquiry: Inquiry, locale = "en") {
+  if (locale === "zh-HK") return ["EMBUILDED｜項目簡介", "", `姓名：${inquiry.name}`, `電郵：${inquiry.email}`, `公司：${inquiry.company}`, `有興趣的服務：${inquiry.service}`, "", "項目要求", inquiry.message, "", "此簡介為下載副本，尚未傳送至 Embuilded。"].join("\n");
   return ["EMBUILDED | PROJECT BRIEF", "", `Name: ${inquiry.name}`, `Email: ${inquiry.email}`, `Company: ${inquiry.company}`, `Area of interest: ${inquiry.service}`, "", "PROJECT REQUIREMENTS", inquiry.message, "", "This is a downloaded project brief. It has not been sent to Embuilded."].join("\n");
 }
 
