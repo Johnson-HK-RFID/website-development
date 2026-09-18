@@ -4,6 +4,8 @@
 
 Current design: [BUILDING_DESIGN.md](BUILDING_DESIGN.md). The earlier blue redesign and its Lighthouse scores below are historical results, not measurements of this release.
 
+Delivered implementation: [`6aa2b35`](https://github.com/Johnson-HK-RFID/website-development/commit/6aa2b357c40fb04c7676a1116d11e4bfcd6c713e), pushed to `main` with remote SHA verification. [GitHub Actions run 35338776953](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35338776953) passed all checks on Linux, including production browser, content preservation, media/motion and bilingual verification.
+
 | Check | Result |
 | --- | --- |
 | ESLint | Passed after the bilingual implementation and test additions |

@@ -33,11 +33,13 @@ Latest user direction supersedes the previous blue palette and bridge/dam select
 - [x] Implement the revised visual system and responsive building-led hero.
 - [x] Add locale routing, complete Traditional Chinese copy, language navigation, localized metadata, catalog and inquiry behavior.
 - [x] Verify both languages, visual layouts, media/motion, accessibility and protected source preservation.
-- [ ] Update documentation, commit and push to the authorized delivery repository.
+- [x] Update documentation, commit and push to the authorized delivery repository.
+
+Implementation commit [`6aa2b35`](https://github.com/Johnson-HK-RFID/website-development/commit/6aa2b357c40fb04c7676a1116d11e4bfcd6c713e) is pushed to `main`; the remote SHA was verified. Local build, type checks, lint, unit tests, content preservation, English browser regression, bilingual and media checks passed. [GitHub Actions](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35338776953) passed installation, lint, unit tests, production build, type checks, protected-source verification and all production browser, content, media and bilingual checks on Linux. The user selected Vercel; import settings are recorded in [DEPLOYMENT.md](DEPLOYMENT.md). A public Vercel deployment has not been performed in this session.
 
 The earlier photography proposal below is superseded and was not delivered as a completed change.
 
-### Engineering photography and restrained motion — in progress
+### Earlier photography proposal — archived and superseded
 
 User requested suitable open-license engineering imagery and purposeful animation. Preserve existing copy, section order, routes and behavior. Use the established taste-skill interpretation (variance 7, motion 3, density 3).
 
