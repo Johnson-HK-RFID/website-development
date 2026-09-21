@@ -32,7 +32,7 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 - Authenticated inspection confirmed the cause: Root Directory was the repository root and Framework Preset was Other, so Vercel served the repository without building the Next.js application.
 - Corrected Root Directory to `website`, Framework Preset to `nextjs`, Install Command to `npm ci`, and Build Command to `npm run build`. Redeployment `dpl_EVUxFUrj7Rpwjf4GGz8bcHGddywt` completed successfully.
 - The production alias `https://website-development-rust.vercel.app` returned HTTP 200 for English and Chinese homepages, TRACI, Chinese Contact and an optimized image. Deployment protection remains unchanged.
-- Set production `SITE_URL` to the production alias and retained `SITE_INDEXABLE=false`. Final verification after rebuilding metadata is in progress.
+- Set production `SITE_URL` to the production alias and retained `SITE_INDEXABLE=false`. Deployment of `9c3339d` completed successfully. Unauthenticated production checks passed for all 30 English/Chinese pages, their language attributes and canonical URLs, all 30 sitemap entries, localized 404 responses and an optimized photograph. The deployment issue is resolved.
 
 ### Building-construction direction and bilingual delivery — 18 September 2026
 

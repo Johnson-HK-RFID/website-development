@@ -1,5 +1,15 @@
 # Verification Record
 
+## Live Vercel verification — 21 September 2026
+
+Production URL: https://website-development-rust.vercel.app
+
+The initial deployment used Root Directory `.` and Framework Preset `Other`, so no Next.js website was built. Corrected the Vercel project to `website`, `nextjs`, `npm ci` and `npm run build`, retaining Node.js 24.x and the existing deployment protection. Set production `SITE_URL` to the production URL and `SITE_INDEXABLE=false`.
+
+The [deployment of `9c3339d`](https://vercel.com/rfid4/website-development/3Wfwg7gugrea22QxssKuTmr1CmZ7) completed successfully. Unauthenticated HTTPS verification passed for all 30 English and Traditional Chinese pages (HTTP 200), correct HTML languages and production canonical URLs, 30 production sitemap entries, English/Chinese missing pages (HTTP 404), and a resized construction photograph (HTTP 200 with an image content type). Local evidence is stored in `.artifacts/vercel-live-verification.json`.
+
+The production URL is publicly reachable. Deployment-specific and branch-preview URLs retain their existing Vercel authentication protection. Inquiry delivery remains download-only until an approved receiver is configured; search indexing remains disabled for review.
+
 ## Building construction and bilingual release — 18 September 2026
 
 Current design: [BUILDING_DESIGN.md](BUILDING_DESIGN.md). The earlier blue redesign and its Lighthouse scores below are historical results, not measurements of this release.
