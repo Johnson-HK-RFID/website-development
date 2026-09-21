@@ -8,6 +8,10 @@ The Next.js application lives in `website/`. Use that directory as the project r
 
 ## Vercel deployment
 
+Current production URL: https://website-development-rust.vercel.app
+
+On 21 September 2026, authenticated inspection found the project was using the repository root and the Other framework preset. This produced a successful-looking static deployment with no website at `/`. The project now uses `website`, Next.js, `npm ci` and `npm run build`. Production `SITE_URL` points to the URL above; indexing remains disabled for review. Existing deployment protection was preserved. Use the production URL above rather than an old deployment-detail link.
+
 Import `Johnson-HK-RFID/website-development` from GitHub and select these settings:
 
 | Setting | Value |

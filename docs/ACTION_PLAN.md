@@ -24,6 +24,16 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ## Current activity
 
+### Vercel access investigation — 21 September 2026
+
+- The supplied screenshot shows the historical `3a84e1b` deployment, marked stale.
+- GitHub records a later successful Vercel deployment of `b092561` at `website-development-396et277m-rfid4.vercel.app`.
+- Unauthenticated requests to both the latest deployment URL and the main-branch alias redirect to Vercel SSO (HTTP 302), including `/` and `/zh-HK`. This prevents external content verification; it does not establish the cause of the earlier 404.
+- Authenticated inspection confirmed the cause: Root Directory was the repository root and Framework Preset was Other, so Vercel served the repository without building the Next.js application.
+- Corrected Root Directory to `website`, Framework Preset to `nextjs`, Install Command to `npm ci`, and Build Command to `npm run build`. Redeployment `dpl_EVUxFUrj7Rpwjf4GGz8bcHGddywt` completed successfully.
+- The production alias `https://website-development-rust.vercel.app` returned HTTP 200 for English and Chinese homepages, TRACI, Chinese Contact and an optimized image. Deployment protection remains unchanged.
+- Set production `SITE_URL` to the production alias and retained `SITE_INDEXABLE=false`. Final verification after rebuilding metadata is in progress.
+
 ### Building-construction direction and bilingual delivery — 18 September 2026
 
 Latest user direction supersedes the previous blue palette and bridge/dam selection. Reference Suffolk, McCownGordon, Layton, Turner and Holder for composition and typography. Use building construction imagery, neutral surfaces and a restrained construction-orange accent. Add complete English and Traditional Chinese experiences while preserving existing English routes and business meaning.
