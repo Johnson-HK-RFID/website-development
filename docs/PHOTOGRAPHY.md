@@ -18,10 +18,10 @@ The editorial iteration adds three Pexels images and one locally encoded, silent
 | --- | --- | --- |
 | Homepage opening | [Tower crane and concrete structure](https://www.pexels.com/photo/construction-site-with-big-tower-crane-7121536/) | Audrey Walsh |
 | Partnership areas | [Residential construction in evening light](https://www.pexels.com/photo/crane-on-a-building-5027559/) | Ilya |
-| Services and film poster | [Workers assembling reinforcement](https://www.pexels.com/video/men-working-on-construction-site-10810476/) | This Viktọ |
-| Homepage services film | First 18 seconds of the same worker footage | This Viktọ |
+| Services and services-page image | [Workers assembling reinforcement](https://www.pexels.com/video/men-working-on-construction-site-10810476/) | This Viktọ |
+| Homepage background film and poster | [Hong Kong construction-site timelapse](https://www.pexels.com/video/time-lapse-video-of-a-construction-site-5698648/) | Site Engine |
 
-Source dimensions, optimized byte sizes and SHA-256 hashes are tracked in [field-media-manifest.json](frontend/field-media-manifest.json). Images are local WebP files. The 1280-pixel H.264 film is approximately 5.3 MB, with source audio removed and fast-start metadata; no video URL is assigned until the visitor requests playback. The film has native pause, seeking and fullscreen controls, a translated scene description and a retry state. The 18-second duration is editorial, not a project metric. The original files and an encoding log are retained in ignored local review artifacts.
+Source dimensions, optimized byte sizes and SHA-256 hashes are tracked in [field-media-manifest.json](frontend/field-media-manifest.json). Images are local WebP files. The 1440-pixel H.264 timelapse is approximately 1.95 MB at 24 fps, with source audio removed and fast-start metadata. It autoplays muted and loops without a click, while a small bilingual control pauses and resumes it. Reduced-motion, data-saving and no-JavaScript conditions show the local poster without loading video. The 15-second duration is the source clip length, not a project metric. The original file and processing evidence remain in ignored local review artifacts.
 
 ### Existing CC0 collection
 

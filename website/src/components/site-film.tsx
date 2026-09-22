@@ -1,35 +1,50 @@
 "use client";
 
-import { useRef, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
-import { Play, ArrowClockwise } from "@phosphor-icons/react";
+import { Pause, Play } from "@phosphor-icons/react";
+import { useEffect, useRef, useState } from "react";
 import { useCopy } from "@/i18n/copy";
 
-const subscribe = () => () => {};
+type NavigatorWithConnection = Navigator & { connection?: { saveData?: boolean } };
 
-/** Explicit playback keeps the initial page free of video requests and autoplay. */
+/** Autoplays only when motion and data-saving preferences permit it; the poster is always present. */
 export function SiteFilm() {
   const t = useCopy();
-  const enhanced = useSyncExternalStore(subscribe, () => true, () => false);
   const video = useRef<HTMLVideoElement>(null);
-  const [started, setStarted] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const play = async () => {
+  const [enabled, setEnabled] = useState(false);
+  const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const connection = (navigator as NavigatorWithConnection).connection;
+    const update = () => setEnabled(!reduced.matches && !connection?.saveData);
+    update();
+    reduced.addEventListener("change", update);
+    return () => reduced.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) { video.current?.pause(); return; }
+    void video.current?.play().catch(() => setPlaying(false));
+  }, [enabled]);
+
+  const toggle = () => {
     const element = video.current;
     if (!element) return;
-    setFailed(false);
-    element.src = "/media/construction-crew.mp4";
-    setStarted(true);
-    try { await element.play(); element.focus(); } catch { setFailed(true); setStarted(false); }
+    if (element.paused) void element.play(); else element.pause();
   };
-  return <figure className="site-film" data-field-media>
-    <div className="film-stage" data-reveal>
-      <video ref={video} controls={started} playsInline preload="none" tabIndex={started ? 0 : -1} aria-label={t("Construction film: workers assembling steel reinforcement. Silent, 18 seconds.")} poster="/images/field/crew.webp" onError={() => { setFailed(true); setStarted(false); }} hidden={!started}/>
-      {!started && <Image src="/images/field/crew.webp" alt={t("Workers in hard hats assembling steel reinforcement on a concrete building floor")} fill sizes="(max-width: 767px) 100vw, 90vw"/>}
-      {enhanced && !started && <button className="film-play" onClick={play}>{failed ? <ArrowClockwise size={24} aria-hidden/> : <Play size={24} weight="fill" aria-hidden/>}<span>{t(failed ? "Retry film" : "Watch the site film")}<small>{t("18 seconds · No sound")}</small></span></button>}
+
+  return <figure className="site-film hero-film" data-field-media>
+    <div className="film-stage">
+      <Image src="/images/field/timelapse.webp" alt="" fill priority sizes="100vw"/>
+      {enabled && <video ref={video} autoPlay muted loop playsInline preload="auto" poster="/images/field/timelapse.webp" aria-hidden="true" tabIndex={-1} onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)}>
+        <source src="/media/construction-timelapse.mp4" type="video/mp4"/>
+      </video>}
+      {enabled && <button className="film-control" type="button" onClick={toggle} aria-label={t(playing ? "Pause construction timelapse" : "Play construction timelapse")}>
+        {playing ? <Pause size={16} weight="fill" aria-hidden="true"/> : <Play size={16} weight="fill" aria-hidden="true"/>}
+        <span>{t(playing ? "Pause film" : "Play film")}</span>
+      </button>}
     </div>
-    <figcaption><span>{t("Illustrative construction scene")} · <a href="https://www.pexels.com/video/men-working-on-construction-site-10810476/">This Viktọ</a> / <a href="https://www.pexels.com/license/">Pexels</a></span><span>{t("Workers assemble reinforcement for a concrete building. Stock footage, not an Embuilded project.")}</span></figcaption>
-    {failed && <p role="status">{t("The film could not load. Please try again.")}</p>}
-    <noscript><p>{t("Enable JavaScript to play the film. The scene is shown above.")}</p></noscript>
+    <figcaption>{t("Illustrative Hong Kong construction timelapse")} · <a href="https://www.pexels.com/video/time-lapse-video-of-a-construction-site-5698648/">Site Engine</a> / <a href="https://www.pexels.com/license/">Pexels</a></figcaption>
   </figure>;
 }

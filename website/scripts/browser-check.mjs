@@ -75,6 +75,11 @@ try {
   assert.equal(await page.getByRole("button",{name:"Open navigation"}).getAttribute("aria-expanded"),"false");
   report.checks.push("Mobile navigation opens, closes on Escape, follows links and closes after navigation.");
 
+  await page.goto("/");
+  await page.evaluate(() => window.scrollTo({top:document.documentElement.scrollHeight,behavior:"instant"}));
+  await page.waitForFunction(() => document.querySelector("[data-scroll-progress]")?.style.transform === "scaleX(1)");
+  report.checks.push("Header reading progress reaches completion at the end of the page.");
+
   await page.setViewportSize({width:1440,height:1000});
   await page.goto("/solutions");
   await page.getByRole("button",{name:"Site safety",exact:true}).click();

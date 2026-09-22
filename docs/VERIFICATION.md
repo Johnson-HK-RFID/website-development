@@ -1,8 +1,14 @@
 # Verification Record
 
+## Full-viewport construction timelapse refinement — 22 September 2026
+
+The Imprezz reference was inspected in a real browser: its opening uses a full-viewport, muted, looping and inline timelapse. The refined homepage applies that behavior with a separately licensed Hong Kong construction scene showing foundation work, cranes, equipment and surrounding buildings. The local MP4 is 1,951,851 bytes; it starts without a click and includes a bilingual pause/resume control. Reduced-motion, data-saving and no-JavaScript paths display the local poster without requesting video.
+
+Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, all 15 English content snapshots, 15 English route and interaction checks, 40 responsive browser layouts, 40 responsive visual layouts, 20 light/dark visual audits, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, media hashes and source protection. The dedicated film test confirms click-free autoplay in both languages, keyboard pause/resume and static fallbacks. No horizontal overflow or automated accessibility violations were found.
+
 ## Field editorial redesign — 22 September 2026
 
-The homepage and supporting service and partner areas now use an editorial construction direction with local, licensed building and worker media. The optional 18-second site film does not download until requested; it has keyboard playback, native controls, a silent accessible description, a poster, a failure/retry state and a no-JavaScript fallback. Stock material is labelled as illustrative and does not imply an Embuilded project or endorsement.
+The first editorial release introduced local, licensed building and worker media and a click-to-play worker film. The later full-viewport refinement above supersedes that film behavior. Stock material remains labelled as illustrative and does not imply an Embuilded project or endorsement.
 
 Validation passed: ESLint, TypeScript, seven inquiry unit tests, the Next.js production build, all 15 English content snapshots, all 15 English route and interaction checks, 40 responsive visual layouts, 20 light/dark visual accessibility audits, 8 media accessibility audits, 15 Chinese routes and 24 Chinese responsive layouts, licensed asset hashes, reduced motion and no-JavaScript behavior. The protected requirement source check confirms all four original source files remain unchanged.
 

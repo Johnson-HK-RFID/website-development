@@ -33,14 +33,25 @@
     "processing": "Resized and compressed to WebP"
   },
   {
-    "file": "website/public/media/construction-crew.mp4",
-    "author": "This Viktọ",
-    "source": "https://www.pexels.com/video/men-working-on-construction-site-10810476/",
+    "file": "website/public/images/field/timelapse.webp",
+    "author": "Site Engine",
+    "source": "https://www.pexels.com/video/time-lapse-video-of-a-construction-site-5698648/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
     "accessed": "2026-09-22",
-    "bytes": 5277457,
-    "sha256": "61b8f2e46c41f41ead39d136932ce96ad32b7c4825a3b63e05a552fee01e551f",
-    "processing": "First 18 seconds; 1280px H.264; audio removed; faststart"
+    "bytes": 390870,
+    "sha256": "2e3b6c82cfee58dec332e5d03c02d84e98c2b9d3d2a6f174cc3ee6f19bc7e68f",
+    "processing": "Frame at four seconds; resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/media/construction-timelapse.mp4",
+    "author": "Site Engine",
+    "source": "https://www.pexels.com/video/time-lapse-video-of-a-construction-site-5698648/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-22",
+    "bytes": 1951851,
+    "sha256": "5c020a4fafff7d1f171a13b004630ce0d11ecadab75ac333a33bb31aae1caa0f",
+    "processing": "1440px H.264 at 24 fps; source audio removed; faststart"
   }
 ]

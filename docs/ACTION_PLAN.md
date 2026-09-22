@@ -24,6 +24,10 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ## Current activity
 
+### Full-viewport construction timelapse refinement — 22 September 2026
+
+Implemented and locally verified: the click-to-play worker film is replaced by an automatically playing, muted Hong Kong construction timelapse based on the user's Imprezz reference. The hero, inner-page introductions, page progress and staggered content interactions now share the refined editorial system. Pause control, reduced-motion and data-saving fallbacks, bilingual behavior and protected source content all pass. GitHub and public production verification remain.
+
 ### Field editorial redesign — 22 September 2026
 
 Completed [the editorial design direction](EDITORIAL_DESIGN.md), licensed building and worker imagery, an optional site film and refined interaction across the existing bilingual site. The production build, source protection, content preservation, responsive layouts, accessibility, media, film behavior and bilingual checks pass. Commit `00c007c` is on `main`; GitHub Actions and the Vercel production deployment passed, and the public English and Chinese release was verified.

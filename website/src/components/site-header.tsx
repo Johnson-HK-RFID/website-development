@@ -39,5 +39,6 @@ export function SiteHeader() {
       <button ref={trigger} className="menu-toggle" aria-expanded={open} aria-controls="mobile-menu" aria-label={t(open ? "Close navigation" : "Open navigation")} onClick={() => setOpen(!open)}>{open ? <X size={24}/> : <List size={24}/>}</button>
     </div>
     {open && <nav id="mobile-menu" className="mobile-nav" aria-label={t("Mobile navigation")}><Link href="/" onClick={() => setOpen(false)}>{t("Home")}</Link>{navigation.map(item => <Link key={item.href} href={item.href} aria-current={pathname.startsWith(item.href) ? "page" : undefined} onClick={() => setOpen(false)}>{t(item.label)}<ArrowUpRight size={18} aria-hidden="true"/></Link>)}<Link href="/contact" onClick={() => setOpen(false)}>{t("Let\u2019s talk")}<ArrowUpRight size={18} aria-hidden="true"/></Link></nav>}
+    <span className="scroll-progress" data-scroll-progress aria-hidden="true"/>
   </header>;
 }
