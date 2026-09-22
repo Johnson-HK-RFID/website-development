@@ -6,6 +6,8 @@ The homepage and supporting service and partner areas now use an editorial const
 
 Validation passed: ESLint, TypeScript, seven inquiry unit tests, the Next.js production build, all 15 English content snapshots, all 15 English route and interaction checks, 40 responsive visual layouts, 20 light/dark visual accessibility audits, 8 media accessibility audits, 15 Chinese routes and 24 Chinese responsive layouts, licensed asset hashes, reduced motion and no-JavaScript behavior. The protected requirement source check confirms all four original source files remain unchanged.
 
+Release commit [`00c007c`](https://github.com/Johnson-HK-RFID/website-development/commit/00c007cc01145da90572d145e4ab4006ccea8066) passed [GitHub Actions](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35704916112) and Vercel deployment `dpl_HW2HvxcxGz6XBYR7PFKaoJgrpFst`. The production alias returned HTTP 200 for the English and Chinese home, services and partner pages. Live browser checks confirmed three homepage field-media areas, no initial video request, successful on-demand playback, the complete 5,277,457-byte MP4 response and the translated Chinese film control.
+
 ## Live Vercel verification — 21 September 2026
 
 Production URL: https://website-development-rust.vercel.app

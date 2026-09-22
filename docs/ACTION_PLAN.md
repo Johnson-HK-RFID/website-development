@@ -26,7 +26,7 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ### Field editorial redesign — 22 September 2026
 
-Implemented [the editorial design direction](EDITORIAL_DESIGN.md), licensed building and worker imagery, an optional site film and refined interaction across the existing bilingual site. The production build, source protection, content preservation, responsive layouts, accessibility, media, film behavior and bilingual checks pass. GitHub and production verification are the remaining release steps.
+Completed [the editorial design direction](EDITORIAL_DESIGN.md), licensed building and worker imagery, an optional site film and refined interaction across the existing bilingual site. The production build, source protection, content preservation, responsive layouts, accessibility, media, film behavior and bilingual checks pass. Commit `00c007c` is on `main`; GitHub Actions and the Vercel production deployment passed, and the public English and Chinese release was verified.
 
 ### Vercel access investigation — 21 September 2026
 

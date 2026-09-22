@@ -21,4 +21,4 @@ Use individually verified Pexels media under the Pexels License alongside the ex
 - [x] Implement responsive compositions, photo placements and film controls.
 - [x] Verify content preservation, both languages, accessibility and motion preferences.
 - [x] Inspect rendered desktop and mobile pages.
-- [ ] Push and verify production deployment.
+- [x] Push and verify production deployment.
