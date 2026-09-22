@@ -26,10 +26,10 @@ try {
     const control = page.locator(".film-control");
     await control.focus();
     await page.keyboard.press("Enter");
-    await page.waitForFunction(() => document.querySelector(".hero-film video")?.paused);
+    await page.waitForFunction(() => document.querySelector(".hero-film video")?.paused && document.querySelector(".film-control")?.getAttribute("aria-label")?.match(/Play|\u64ad\u653e/));
     assert.match(await control.getAttribute("aria-label"), route === "/" ? /Play construction/ : /\u64ad\u653e\u65bd\u5de5/);
     await page.keyboard.press("Enter");
-    await page.waitForFunction(() => !document.querySelector(".hero-film video")?.paused);
+    await page.waitForFunction(() => !document.querySelector(".hero-film video")?.paused && document.querySelector(".film-control")?.getAttribute("aria-label")?.match(/Pause|\u66ab\u505c/));
     await page.close();
   }
   const reduced = await browser.newPage({ reducedMotion: "reduce" });
