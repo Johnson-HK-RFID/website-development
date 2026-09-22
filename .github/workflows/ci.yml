@@ -43,6 +43,7 @@ jobs:
           npm run test:content
           npm run test:media
           npm run test:i18n
+          npm run test:film
       - uses: actions/upload-artifact@v4
         if: always()
         with:

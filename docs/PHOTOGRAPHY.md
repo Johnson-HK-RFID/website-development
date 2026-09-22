@@ -1,6 +1,6 @@
 ﻿# Engineering Photography and Motion
 
-Date: 18 September 2026
+Date: 22 September 2026
 
 ## Design interpretation
 
@@ -9,6 +9,21 @@ Building construction is the primary engineering context. Real cranes, scaffoldi
 The user's request for sourced photography takes precedence over the upstream taste-skill preference for generated assets. None of these third-party photographs represents an Embuilded installation, customer, product or case study.
 
 ## Selected photographs
+
+### September 22 additions
+
+The editorial iteration adds three Pexels images and one locally encoded, silent film. These use the [Pexels License](https://www.pexels.com/license/), not CC0. The license permits website use and editing, prohibits implied endorsement, and does not permit redistribution as a stock library. In-context captions identify illustrative stock scenes; no person or site is presented as an Embuilded employee or project.
+
+| Placement | Source | Author |
+| --- | --- | --- |
+| Homepage opening | [Tower crane and concrete structure](https://www.pexels.com/photo/construction-site-with-big-tower-crane-7121536/) | Audrey Walsh |
+| Partnership areas | [Residential construction in evening light](https://www.pexels.com/photo/crane-on-a-building-5027559/) | Ilya |
+| Services and film poster | [Workers assembling reinforcement](https://www.pexels.com/video/men-working-on-construction-site-10810476/) | This Viktọ |
+| Homepage services film | First 18 seconds of the same worker footage | This Viktọ |
+
+Source dimensions, optimized byte sizes and SHA-256 hashes are tracked in [field-media-manifest.json](frontend/field-media-manifest.json). Images are local WebP files. The 1280-pixel H.264 film is approximately 5.3 MB, with source audio removed and fast-start metadata; no video URL is assigned until the visitor requests playback. The film has native pause, seeking and fullscreen controls, a translated scene description and a retry state. The 18-second duration is editorial, not a project metric. The original files and an encoding log are retained in ignored local review artifacts.
+
+### Existing CC0 collection
 
 Each individual Wikimedia Commons file description identifies the photograph as **CC0 1.0**. The two building-site photographs were dedicated to the public domain by their respective contributors. The facade and industrial photographs were published on Unsplash before its June 2017 license change and carry individual CC0 evidence on Commons. This assessment uses each image's license section rather than Commons' general metadata license. See the [Creative Commons deed](https://creativecommons.org/publicdomain/zero/1.0/).
 

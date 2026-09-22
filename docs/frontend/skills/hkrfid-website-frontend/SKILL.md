@@ -72,7 +72,9 @@ The user has explicitly authorized a full redesign of the delivered application 
 - Use semantic diagram labels and SVG connections to explain relationships. A system diagram is not a product screenshot or evidence of live operational data.
 - Review the actual rendered desktop, 960-pixel tablet and mobile screens, including both system color schemes. Passing automated checks alone does not establish visual quality.
 - The user has requested open-license engineering photography. Follow [PHOTOGRAPHY.md](../../../PHOTOGRAPHY.md): use individually verified CC0 sources, local responsive assets and accurate scene descriptions; preserve source and license records. New photography may add captions and source credits without rewriting existing business copy.
-- Keep motion at intensity 3: once-per-visit entrances and explanatory connection sequences. Honor reduced motion, retain visible server-rendered content, and avoid perpetual or simulated-live animation.
+- The 22 September user direction is recorded in [EDITORIAL_DESIGN.md](../../../EDITORIAL_DESIGN.md), superseding the condensed uppercase presentation above. Use sentence-case Geist headings, construction photography, worker footage and deliberate editorial composition; retain the existing wordmark.
+- Verified Pexels License assets are now allowed alongside CC0 assets. Preserve individual source, author, license and checksum records. Stock workers and sites must not imply company employment, endorsement or completed projects.
+- Use motion intensity 5 for the current iteration: once-per-visit entrances, purposeful hover/focus feedback and an explicitly played film. Honor reduced motion, retain visible server-rendered content, and avoid perpetual or simulated-live animation. Load video only after an explicit request.
 
 ### Technical boundaries
 

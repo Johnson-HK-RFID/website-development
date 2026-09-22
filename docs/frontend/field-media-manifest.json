@@ -1,0 +1,46 @@
+[
+  {
+    "file": "website/public/images/field/tower.webp",
+    "author": "Audrey Walsh",
+    "source": "https://www.pexels.com/photo/construction-site-with-big-tower-crane-7121536/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-22",
+    "bytes": 155692,
+    "sha256": "92df2a9f150ed454f9e4e0bea82f33ead8d6a05e08e538ec99d8f7e68537cadf",
+    "processing": "Resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/images/field/buildings.webp",
+    "author": "Ilya",
+    "source": "https://www.pexels.com/photo/crane-on-a-building-5027559/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-22",
+    "bytes": 211328,
+    "sha256": "caaf7c2d5368ff5a298b32c44e000d088e1fcc01f8ff9ff5bd2a8d008174c4f1",
+    "processing": "Resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/images/field/crew.webp",
+    "author": "This Viktọ",
+    "source": "https://www.pexels.com/video/men-working-on-construction-site-10810476/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-22",
+    "bytes": 196944,
+    "sha256": "6207ee66623b4be0893848f10dfaccfc4ef0f684afb378ecae2ce6d6badb33b8",
+    "processing": "Resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/media/construction-crew.mp4",
+    "author": "This Viktọ",
+    "source": "https://www.pexels.com/video/men-working-on-construction-site-10810476/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-22",
+    "bytes": 5277457,
+    "sha256": "61b8f2e46c41f41ead39d136932ce96ad32b7c4825a3b63e05a552fee01e551f",
+    "processing": "First 18 seconds; 1280px H.264; audio removed; faststart"
+  }
+]

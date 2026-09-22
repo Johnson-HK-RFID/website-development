@@ -20,7 +20,7 @@ try {
       // The September photography addition introduces only these new, self-contained
       // figures and source credits. Keep the original business-copy fixture unchanged;
       // photo content, credits and delivery are checked separately by test:media.
-      main.querySelectorAll("figure[data-industry-photo], figure[data-building-photo]").forEach(figure => figure.remove());
+      main.querySelectorAll("figure[data-industry-photo], figure[data-building-photo], figure[data-field-media]").forEach(figure => figure.remove());
       const header = document.querySelector("header").cloneNode(true);
       header.querySelectorAll("[data-locale-switch]").forEach(element => element.remove());
       return {

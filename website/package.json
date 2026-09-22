@@ -14,7 +14,8 @@
     "test:content": "node scripts/content-snapshot.mjs",
     "test:visual": "node scripts/visual-review.mjs",
     "test:media": "node scripts/media-check.mjs",
-    "test:i18n": "node scripts/i18n-check.mjs"
+    "test:i18n": "node scripts/i18n-check.mjs",
+    "test:film": "node scripts/film-check.mjs"
   },
   "engines": {
     "node": "24.x"

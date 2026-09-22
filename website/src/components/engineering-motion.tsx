@@ -31,7 +31,7 @@ export function EngineeringMotion() {
         }
       }
     }, { threshold: .15 });
-    document.querySelectorAll("[data-reveal], .architecture").forEach(element => observer.observe(element));
+    document.querySelectorAll("[data-reveal], .architecture, .section-heading, .service-row").forEach(element => observer.observe(element));
     const cancel = () => { animations.forEach(animation => animation.cancel()); animations.clear(); };
     const onPreference = () => { if (preference.matches) cancel(); };
     preference.addEventListener("change", onPreference);

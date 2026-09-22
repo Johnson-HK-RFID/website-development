@@ -1,5 +1,11 @@
 # Verification Record
 
+## Field editorial redesign — 22 September 2026
+
+The homepage and supporting service and partner areas now use an editorial construction direction with local, licensed building and worker media. The optional 18-second site film does not download until requested; it has keyboard playback, native controls, a silent accessible description, a poster, a failure/retry state and a no-JavaScript fallback. Stock material is labelled as illustrative and does not imply an Embuilded project or endorsement.
+
+Validation passed: ESLint, TypeScript, seven inquiry unit tests, the Next.js production build, all 15 English content snapshots, all 15 English route and interaction checks, 40 responsive visual layouts, 20 light/dark visual accessibility audits, 8 media accessibility audits, 15 Chinese routes and 24 Chinese responsive layouts, licensed asset hashes, reduced motion and no-JavaScript behavior. The protected requirement source check confirms all four original source files remain unchanged.
+
 ## Live Vercel verification — 21 September 2026
 
 Production URL: https://website-development-rust.vercel.app
