@@ -6,6 +6,8 @@ The standalone three-image homepage gallery was removed. One Hong Kong site phot
 
 Validation passed: ESLint, TypeScript, the Next.js production build, seven inquiry tests, 15 English content snapshots, 15 English routes, 40 responsive browser layouts, 40 responsive visual layouts, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, asset hashes, internal source records, self-hosted image delivery, motion and static fallbacks. No horizontal overflow or automated accessibility violations were found.
 
+Release commit [`9ff4c53`](https://github.com/Johnson-HK-RFID/website-development/commit/9ff4c530e9e803190ddd92a626420ca655061e0b) passed [GitHub Actions](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35964025953) and Vercel production deployment `website-development-ocndqyull-rfid4.vercel.app`. Live production checks confirmed that the standalone gallery is absent, the homepage has one integrated service photograph, all six solution cards have contextual images, every image endpoint responds successfully and no public stock-source caption is rendered.
+
 ## Hong Kong field-gallery refinement — 24 September 2026
 
 The homepage no longer exposes film playback controls. Its muted 15-second Hong Kong construction timelapse starts automatically when motion and data preferences permit, while reduced-motion, data-saving and no-JavaScript visits retain the local poster. The generic worker photograph was removed. A new editorial gallery combines three separately licensed Hong Kong photographs: an active building site, a facade construction team and an urban tower crane. The gallery uses slow vertical movement, staggered placement and restrained hover depth; reduced-motion mode removes the continuous movement.

@@ -26,7 +26,7 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ### Full-viewport construction timelapse refinement — 22 September 2026
 
-Implemented and locally verified: the isolated homepage photo gallery is removed and construction photography is integrated where the layout has genuine unused space. The homepage service introduction uses one contextual site image; solution cards use compact supporting images without displacing their text. Public stock-source captions are removed while complete author, source, licence and checksum evidence remains in the internal media manifests. Publication and production verification follow.
+Implemented, published and production-verified: the isolated homepage photo gallery is removed and construction photography is integrated where the layout has genuine unused space. The homepage service introduction uses one contextual site image; solution cards use compact supporting images without displacing their text. Public stock-source captions are removed while complete author, source, licence and checksum evidence remains in the internal media manifests. GitHub Actions and the public Vercel deployment pass.
 
 ### Field editorial redesign — 22 September 2026
 
