@@ -16,7 +16,9 @@ Use individually verified Pexels media under the Pexels License alongside the ex
 
 ## Timelapse refinement — 22 September 2026
 
-The user clarified that the film should match the full-viewport behavior of the Imprezz demo: a broad, fixed camera view across an active construction site, playing without a click. The homepage now uses a 15-second Hong Kong foundation and building-site timelapse as its cinematic opening. It autoplays muted, loops and plays inline, while a visible pause control satisfies user control. Reduced-motion, data-saving and no-JavaScript conditions retain the local poster without requesting the MP4. The source audio is removed.
+The user clarified that the film should match the full-viewport behavior of the Imprezz demo: a broad, fixed camera view across an active construction site, playing without a click. The homepage uses a 15-second Hong Kong foundation and building-site timelapse as its cinematic opening. It autoplays muted, loops and plays inline without visible playback chrome. Reduced-motion, data-saving and no-JavaScript conditions retain the local poster without requesting the MP4. The source audio is removed.
+
+The services transition uses three licensed Hong Kong photographs at different scales: an active building site, a facade construction team and a tower crane in the urban fabric. Their staggered composition replaces the isolated generic worker image. Slow vertical movement, restrained image enlargement on hover and architectural guide lines create depth without resembling a software dashboard.
 
 The second refinement also applies the editorial system across the site: split inner-page introductions, a thin reading-progress rule, staggered content entrances and stronger hover/focus feedback. Motion remains subordinate to navigation and reading.
 
@@ -24,7 +26,7 @@ The second refinement also applies the editorial system across the site: split i
 
 - [x] Audit source code and capture the reference website.
 - [x] Set art direction and motion budget.
-- [x] Implement responsive compositions, photo placements and film controls.
+- [x] Implement responsive compositions, local photo placements and ambient film behavior.
 - [x] Verify content preservation, both languages, accessibility and motion preferences.
 - [x] Inspect rendered desktop and mobile pages.
 - [x] Push and verify production deployment.

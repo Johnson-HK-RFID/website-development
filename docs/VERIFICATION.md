@@ -1,10 +1,16 @@
 # Verification Record
 
+## Hong Kong field-gallery refinement — 24 September 2026
+
+The homepage no longer exposes film playback controls. Its muted 15-second Hong Kong construction timelapse starts automatically when motion and data preferences permit, while reduced-motion, data-saving and no-JavaScript visits retain the local poster. The generic worker photograph was removed. A new editorial gallery combines three separately licensed Hong Kong photographs: an active building site, a facade construction team and an urban tower crane. The gallery uses slow vertical movement, staggered placement and restrained hover depth; reduced-motion mode removes the continuous movement.
+
+Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, 15 English content snapshots, 15 English routes, 40 responsive browser layouts, 40 responsive visual layouts, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, licensed media hashes, local image delivery, film behavior and static fallbacks. Browser captures were inspected at 1440 and 390 pixels. No horizontal overflow or automated accessibility violations were found.
+
 ## Full-viewport construction timelapse refinement — 22 September 2026
 
-The Imprezz reference was inspected in a real browser: its opening uses a full-viewport, muted, looping and inline timelapse. The refined homepage applies that behavior with a separately licensed Hong Kong construction scene showing foundation work, cranes, equipment and surrounding buildings. The local MP4 is 1,951,851 bytes; it starts without a click and includes a bilingual pause/resume control. Reduced-motion, data-saving and no-JavaScript paths display the local poster without requesting video.
+The Imprezz reference was inspected in a real browser: its opening uses a full-viewport, muted, looping and inline timelapse. The refined homepage applies that behavior with a separately licensed Hong Kong construction scene showing foundation work, cranes, equipment and surrounding buildings. The local MP4 is 1,951,851 bytes and starts without a click. The 24 September refinement above supersedes the original playback-control treatment. Reduced-motion, data-saving and no-JavaScript paths display the local poster without requesting video.
 
-Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, all 15 English content snapshots, 15 English route and interaction checks, 40 responsive browser layouts, 40 responsive visual layouts, 20 light/dark visual audits, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, media hashes and source protection. The dedicated film test confirms click-free autoplay in both languages, keyboard pause/resume and static fallbacks. No horizontal overflow or automated accessibility violations were found.
+Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, all 15 English content snapshots, 15 English route and interaction checks, 40 responsive browser layouts, 40 responsive visual layouts, 20 light/dark visual audits, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, media hashes and source protection. The dedicated film test confirms click-free autoplay in both languages and static fallbacks. No horizontal overflow or automated accessibility violations were found.
 
 ## Field editorial redesign — 22 September 2026
 

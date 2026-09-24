@@ -21,7 +21,7 @@ The editorial iteration adds three Pexels images and one locally encoded, silent
 | Services and services-page image | [Workers assembling reinforcement](https://www.pexels.com/video/men-working-on-construction-site-10810476/) | This Viktọ |
 | Homepage background film and poster | [Hong Kong construction-site timelapse](https://www.pexels.com/video/time-lapse-video-of-a-construction-site-5698648/) | Site Engine |
 
-Source dimensions, optimized byte sizes and SHA-256 hashes are tracked in [field-media-manifest.json](frontend/field-media-manifest.json). Images are local WebP files. The 1440-pixel H.264 timelapse is approximately 1.95 MB at 24 fps, with source audio removed and fast-start metadata. It autoplays muted and loops without a click, while a small bilingual control pauses and resumes it. Reduced-motion, data-saving and no-JavaScript conditions show the local poster without loading video. The 15-second duration is the source clip length, not a project metric. The original file and processing evidence remain in ignored local review artifacts.
+Source dimensions, optimized byte sizes and SHA-256 hashes are tracked in [field-media-manifest.json](frontend/field-media-manifest.json). Images are local WebP files. The homepage field series now includes three photographs made in Hong Kong: a large building site, a facade construction team and an urban tower crane. The 1440-pixel H.264 timelapse is approximately 1.95 MB at 24 fps, with source audio removed and fast-start metadata. It autoplays muted and loops without a click or visible playback control. Reduced-motion, data-saving and no-JavaScript conditions show the local poster without loading video. The 15-second duration is the source clip length, not a project metric. The original files and processing evidence remain in ignored local review artifacts.
 
 ### Existing CC0 collection
 
@@ -56,4 +56,4 @@ No looping effects, autoplay video, scroll interception or simulated live signal
 
 ## Verification
 
-`npm run test:media` checks asset hashes, image delivery, responsive layouts, credits, light/dark accessibility, one-shot motion, reduced motion, client navigation and no-JavaScript rendering. The bilingual suite checks localized layouts and controls. Completed results are recorded in [VERIFICATION.md](VERIFICATION.md).
+`npm run test:media` checks asset hashes, image delivery, responsive layouts, credits, light/dark accessibility, motion, reduced motion, client navigation and no-JavaScript rendering. The bilingual suite checks localized layouts and navigation. Completed results are recorded in [VERIFICATION.md](VERIFICATION.md).

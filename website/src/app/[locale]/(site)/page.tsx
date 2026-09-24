@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { ActionLink, Architecture, ContactBand, ServiceList, TextLink } from "@/components/shared";
 import { FieldPhoto } from "@/components/field-photo";
+import { FieldGallery } from "@/components/field-gallery";
 import { SiteFilm } from "@/components/site-film";
 import { industries, solutions, caseStudies } from "@/content/site";
 import { pageMetadata } from "@/lib/metadata";
@@ -23,7 +24,7 @@ export default function Home({params}: {params: Promise<{locale: string}>}) {
 
     <section className="section wrap"><div className="section-heading"><h2>{t("Real environments.")}<br /><span className="muted-heading">{t("Connected solutions.")}</span></h2><p>{t("Start with the challenge on your site. Build the right combination of devices, engineering and intelligence.")}</p></div><div className="home-solutions">{solutions.filter(s => s.slug !== "outrigger-monitoring").map((solution, i) => <Link key={solution.slug} href={`/solutions/${solution.slug}`} className={`home-solution ${i === 0 ? "home-solution-featured" : ""}`}><div className="solution-topline"><span className="mono">{t(solution.category)}</span><ArrowUpRight size={20} aria-hidden="true"/></div><div><h3>{t(solution.title)}</h3><p>{t(solution.description)}</p></div></Link>)}</div><div className="section-bottom"><TextLink href="/solutions">{t("View all solutions")}</TextLink><Link className="subtle-link" href="/traci#plugins">{t("Explore TRACI BCDS and the plugin family ")}<ArrowRight size={16} aria-hidden="true"/></Link></div></section>
 
-    <section className="services-section"><div className="wrap services-grid"><div className="section-heading"><h2>{t("Three ways")}<br />{t("to move forward.")}</h2><p>{t("Use the engineering you need.")}<br />{t("Add the hardware that fits.")}<br />{t("Connect it with managed services.")}</p><TextLink href="/services">{t("Explore our services")}</TextLink></div><ServiceList /></div><div className="wrap film-wrap"><FieldPhoto scene="crew"/></div></section>
+    <section className="services-section"><div className="wrap services-grid"><div className="section-heading"><h2>{t("Three ways")}<br />{t("to move forward.")}</h2><p>{t("Use the engineering you need.")}<br />{t("Add the hardware that fits.")}<br />{t("Connect it with managed services.")}</p><TextLink href="/services">{t("Explore our services")}</TextLink></div><ServiceList /></div><div className="wrap field-gallery-wrap"><FieldGallery/></div></section>
 
     <section className="section wrap platform-section"><div className="platform-copy"><div className="eyebrow">{t("THE TRACI PLATFORM")}</div><h2>{t("One connected view.")}<br />{t("From device to evidence.")}</h2><p>{t("A modular device, intelligence and evidence platform for the built world. Connect the field with the systems your teams use.")}</p><ActionLink href="/traci" secondary>{t("Meet TRACI")}</ActionLink></div><Architecture /></section>
 

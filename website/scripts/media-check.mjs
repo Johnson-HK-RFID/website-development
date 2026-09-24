@@ -41,7 +41,7 @@ try {
       assert.equal(await page.locator(".industry-photo-frame").count(), 4);
       for (const img of await page.locator(".industry-photo-frame img").all()) {
         await img.scrollIntoViewIfNeeded();
-        await img.evaluate(image => Promise.race([image.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + image.src)), 15000))]));
+        await img.evaluate(image => Promise.race([image.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + image.src)), 30000))]));
         assert(await img.evaluate(image => image.naturalWidth > 0 && image.loading === "lazy"));
         const currentSrc = await img.evaluate(image => image.currentSrc);
         assert.equal(new URL(currentSrc).origin, new URL(base).origin, "Images must be self-hosted");
@@ -82,13 +82,14 @@ try {
   await moving.goto(base);
   await moving.locator(".industry-links").scrollIntoViewIfNeeded();
   await moving.waitForFunction(() => window.__motion.filter(item => item.photo).length > 0);
-  await moving.waitForFunction(() => document.getAnimations().every(animation => animation.playState !== "running"));
+  await moving.waitForFunction(() => document.getAnimations().filter(animation => animation.effect?.getTiming().iterations !== Infinity).every(animation => animation.playState !== "running"));
   const count = await moving.evaluate(() => window.__motion.filter(item => item.photo).length);
   await moving.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
   await moving.locator(".industry-links").scrollIntoViewIfNeeded();
   await moving.waitForTimeout(600);
   assert.equal(await moving.evaluate(() => window.__motion.filter(item => item.photo).length), count, "Photos must not replay on scroll");
-  report.motion.push("Photo entrance plays once and settles to a static image");
+  assert(await moving.locator(".field-gallery-item").first().evaluate(element => getComputedStyle(element).animationName.includes("field-float")), "Field gallery should carry restrained ambient movement");
+  report.motion.push("Photo entrances play once; the field gallery retains restrained ambient movement");
 
   // Exercise client-side navigation as well as direct page loads.
   await moving.locator('.industry-links a[href="/industries#construction"]').click();

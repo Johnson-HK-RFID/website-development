@@ -23,13 +23,7 @@ try {
     const video = page.locator(".hero-film video");
     assert(requests.length > 0, "Film must load and play without a click");
     assert(await video.evaluate(v => v.autoplay && v.muted && v.loop && v.playsInline && !v.controls && !v.paused && v.duration >= 14.5 && v.duration < 16));
-    const control = page.locator(".film-control");
-    await control.focus();
-    await page.keyboard.press("Enter");
-    await page.waitForFunction(() => document.querySelector(".hero-film video")?.paused && document.querySelector(".film-control")?.getAttribute("aria-label")?.match(/Play|\u64ad\u653e/));
-    assert.match(await control.getAttribute("aria-label"), route === "/" ? /Play construction/ : /\u64ad\u653e\u65bd\u5de5/);
-    await page.keyboard.press("Enter");
-    await page.waitForFunction(() => !document.querySelector(".hero-film video")?.paused && document.querySelector(".film-control")?.getAttribute("aria-label")?.match(/Pause|\u66ab\u505c/));
+    assert.equal(await page.locator(".film-control").count(), 0, "The ambient hero film must not expose playback chrome");
     await page.close();
   }
   const reduced = await browser.newPage({ reducedMotion: "reduce" });
@@ -47,5 +41,5 @@ try {
   assert.equal(await staticPage.locator(".hero-film video").count(), 0);
   await staticPage.locator(".hero-film img").evaluate(image => image.decode());
   await staticPage.close();
-  console.log("PASS: licensed media hashes; click-free muted autoplay in both locales; keyboard pause/resume; reduced-motion and no-JavaScript poster fallbacks.");
+  console.log("PASS: licensed media hashes; control-free muted autoplay in both locales; reduced-motion and no-JavaScript poster fallbacks.");
 } finally { await browser.close(); }

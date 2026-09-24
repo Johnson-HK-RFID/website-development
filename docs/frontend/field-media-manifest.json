@@ -22,14 +22,36 @@
     "processing": "Resized and compressed to WebP"
   },
   {
-    "file": "website/public/images/field/crew.webp",
-    "author": "This Viktọ",
-    "source": "https://www.pexels.com/video/men-working-on-construction-site-10810476/",
+    "file": "website/public/images/field/hong-kong-site.webp",
+    "author": "Jos? Alan Galant",
+    "source": "https://www.pexels.com/photo/construction-site-in-city-14192787/",
     "license": "Pexels License",
     "licenseUrl": "https://www.pexels.com/license/",
-    "accessed": "2026-09-22",
-    "bytes": 196944,
-    "sha256": "6207ee66623b4be0893848f10dfaccfc4ef0f684afb378ecae2ce6d6badb33b8",
+    "accessed": "2026-09-24",
+    "bytes": 388136,
+    "sha256": "2cc5176139e8fb0838f667755cd39f67f03bc5875ca112313d069fa40a9e969e",
+    "processing": "Resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/images/field/hong-kong-workers.webp",
+    "author": "Fu Shan Un",
+    "source": "https://www.pexels.com/photo/building-facade-with-bamboo-scaffolding-14101358/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-24",
+    "bytes": 439210,
+    "sha256": "5bfa5ec87fc5932d7633794a494ec9758f386c16165c339a19602df38d95dc1a",
+    "processing": "Resized and compressed to WebP"
+  },
+  {
+    "file": "website/public/images/field/hong-kong-crane.webp",
+    "author": "King Ho",
+    "source": "https://www.pexels.com/photo/construction-crane-towering-over-building-13031842/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "accessed": "2026-09-24",
+    "bytes": 192228,
+    "sha256": "603491cfbe40aaaa3a377ea20148c3c42b5673ba3f77b2dca8291c990ffa97e0",
     "processing": "Resized and compressed to WebP"
   },
   {
