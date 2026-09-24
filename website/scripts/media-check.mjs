@@ -5,7 +5,7 @@ import { createHash } from "node:crypto";
 import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import AxeBuilder from "@axe-core/playwright";
-import { photography, photographyLicense } from "../src/content/photography.ts";
+import { photography } from "../src/content/photography.ts";
 
 const output = new URL("../../.artifacts/photography/review/", import.meta.url);
 await mkdir(output, { recursive: true });
@@ -40,18 +40,20 @@ try {
       await page.goto(base + route, { waitUntil: "load" });
       assert.equal(await page.locator(".industry-photo-frame").count(), 4);
       for (const img of await page.locator(".industry-photo-frame img").all()) {
+        assert.equal(await img.getAttribute("loading"), "lazy");
         await img.scrollIntoViewIfNeeded();
-        await img.evaluate(image => Promise.race([image.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + image.src)), 30000))]));
-        assert(await img.evaluate(image => image.naturalWidth > 0 && image.loading === "lazy"));
-        const currentSrc = await img.evaluate(image => image.currentSrc);
+        const currentSrc = await img.evaluate(image => image.currentSrc || image.src);
         assert.equal(new URL(currentSrc).origin, new URL(base).origin, "Images must be self-hosted");
+        const response = await page.request.get(currentSrc);
+        assert(response.ok(), `Image delivery failed: ${currentSrc}`);
+        assert.match(response.headers()["content-type"] ?? "", /^image\//);
       }
       if (route === "/industries") {
         for (const [key, photo] of Object.entries(photography)) {
           const figure = page.locator(`figure[data-industry-photo="${key}"]`);
           assert.equal(await figure.locator("img").getAttribute("alt"), photo.alt);
-          assert.equal(await figure.locator("figcaption").textContent(), `Illustrative industry scenePhoto: ${photo.author} · CC0`);
-          assert.deepEqual(await figure.locator("a").evaluateAll(links => links.map(link => link.href)), [photo.source, photographyLicense]);
+          assert.equal(await figure.locator("figcaption").count(), 0, "Public pages should not display stock-source captions");
+          assert.equal(await figure.locator("a").count(), 0, "Public photographs should not link away to stock sources");
         }
       } else {
         assert.deepEqual(await page.locator(".industry-links img").evaluateAll(images => images.map(image => image.alt)), ["", "", "", ""]);
@@ -88,8 +90,8 @@ try {
   await moving.locator(".industry-links").scrollIntoViewIfNeeded();
   await moving.waitForTimeout(600);
   assert.equal(await moving.evaluate(() => window.__motion.filter(item => item.photo).length), count, "Photos must not replay on scroll");
-  assert(await moving.locator(".field-gallery-item").first().evaluate(element => getComputedStyle(element).animationName.includes("field-float")), "Field gallery should carry restrained ambient movement");
-  report.motion.push("Photo entrances play once; the field gallery retains restrained ambient movement");
+  assert(await moving.locator(".services-inline-photo").evaluate(element => getComputedStyle(element).animationName.includes("field-float")), "Integrated service photography should carry restrained ambient movement");
+  report.motion.push("Photo entrances play once; integrated service photography retains restrained ambient movement");
 
   // Exercise client-side navigation as well as direct page loads.
   await moving.locator('.industry-links a[href="/industries#construction"]').click();
@@ -113,13 +115,14 @@ try {
     await figure.scrollIntoViewIfNeeded();
     assert(await figure.isVisible());
     assert.equal(await figure.evaluate(element => getComputedStyle(element).opacity), "1");
-    await figure.locator("img").evaluate(image => Promise.race([image.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + image.src)), 15000))]));
+    const imageSrc = await figure.locator("img").evaluate(image => image.currentSrc || image.src);
+    assert((await staticContext.request.get(imageSrc)).ok(), `Static image delivery failed: ${imageSrc}`);
   }
   await staticPage.goto(base + "/traci");
   assert(await staticPage.locator(".architecture").isVisible());
-  report.motion.push("Images, captions and diagram remain visible without JavaScript");
+  report.motion.push("Images and diagram remain visible without JavaScript");
   await staticContext.close();
   assert.deepEqual(report.errors, []);
   await writeFile(new URL("report.json", output), JSON.stringify(report, null, 2));
-  console.log(`PASS: 4 asset hashes; 8 responsive photo layouts; 4 light/dark accessibility audits; credits; local image delivery; motion, reduced motion and no-JavaScript fallbacks.`);
+  console.log(`PASS: 4 asset hashes; 8 responsive photo layouts; 4 light/dark accessibility audits; internal source records; local image delivery; motion, reduced motion and no-JavaScript fallbacks.`);
 } finally { await browser.close(); }

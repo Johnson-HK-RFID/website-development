@@ -18,7 +18,7 @@ Use individually verified Pexels media under the Pexels License alongside the ex
 
 The user clarified that the film should match the full-viewport behavior of the Imprezz demo: a broad, fixed camera view across an active construction site, playing without a click. The homepage uses a 15-second Hong Kong foundation and building-site timelapse as its cinematic opening. It autoplays muted, loops and plays inline without visible playback chrome. Reduced-motion, data-saving and no-JavaScript conditions retain the local poster without requesting the MP4. The source audio is removed.
 
-The services transition uses three licensed Hong Kong photographs at different scales: an active building site, a facade construction team and a tower crane in the urban fabric. Their staggered composition replaces the isolated generic worker image. Slow vertical movement, restrained image enlargement on hover and architectural guide lines create depth without resembling a software dashboard.
+Photography is integrated into content rather than presented as a standalone gallery. The homepage service introduction uses one active Hong Kong building-site image in the unused space beneath its copy. Solution cards pair their text with compact, contextual construction crops. Slow vertical movement is limited to the service image, while restrained hover depth supports clickable solution cards. Public pages omit stock-source captions; source and licence evidence remains in the internal media records.
 
 The second refinement also applies the editorial system across the site: split inner-page introductions, a thin reading-progress rule, staggered content entrances and stronger hover/focus feedback. Motion remains subordinate to navigation and reading.
 

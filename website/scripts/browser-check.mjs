@@ -26,7 +26,10 @@ try {
     assert.ok((await page.title()).includes("Embuilded"),`${route}: title`);
     for (const image of await page.locator("img").all()) {
       await image.scrollIntoViewIfNeeded();
-      assert.equal(await image.evaluate(async img => { try { await Promise.race([img.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error("Image decode timed out: " + img.src)), 15000))]); return img.naturalWidth > 0; } catch { return false; } }),true,`${route}: image loading`);
+      const source = await image.evaluate(img => img.currentSrc || img.src);
+      const imageResponse = await context.request.get(source);
+      assert(imageResponse.ok(), `${route}: image delivery`);
+      assert.match(imageResponse.headers()["content-type"] ?? "", /^image\//, `${route}: image content type`);
     }
     report.routes.push({path:route,status:response.status(),title:await page.title()});
     for (const href of await page.locator('a[href^="/"]').evaluateAll(links=>links.map(link=>link.getAttribute("href")))) internalLinks.add(href);

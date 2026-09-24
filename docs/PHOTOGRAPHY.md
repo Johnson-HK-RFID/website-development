@@ -12,7 +12,7 @@ The user's request for sourced photography takes precedence over the upstream ta
 
 ### September 22 additions
 
-The editorial iteration adds three Pexels images and one locally encoded, silent film. These use the [Pexels License](https://www.pexels.com/license/), not CC0. The license permits website use and editing, prohibits implied endorsement, and does not permit redistribution as a stock library. In-context captions identify illustrative stock scenes; no person or site is presented as an Embuilded employee or project.
+The editorial iteration adds three Pexels images and one locally encoded, silent film. These use the [Pexels License](https://www.pexels.com/license/), not CC0. The license permits website use and editing, prohibits implied endorsement, and does not permit redistribution as a stock library. Public pages do not display stock-library captions. Internal manifests retain the author, source, licence and checksum for every asset, and no person or site is presented as an Embuilded employee or project.
 
 | Placement | Source | Author |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Each individual Wikimedia Commons file description identifies the photograph as 
 | Property & facilities | [Urban building](https://commons.wikimedia.org/w/index.php?oldid=1065858747) | Richard Pouncy Jr. | Building envelope and lighting establish the property context |
 | Industrial | [Industrial Manufacturing](https://commons.wikimedia.org/w/index.php?oldid=808670457) | Ant Rozetsky | Steel structure and overhead lifting equipment support the secondary industrial application |
 
-The [asset manifest](frontend/photography-manifest.json) records source revisions, license evidence, downloads, processing and SHA-256 hashes. Larger images include photographer/source and CC0 links. Homepage industry thumbnails link to the corresponding credited sections and use empty alt attributes to avoid repeating the link names. English and Traditional Chinese descriptions accurately identify the scenes.
+The [asset manifest](frontend/photography-manifest.json) records source revisions, licence evidence, downloads, processing and SHA-256 hashes. Attribution and licensing evidence is maintained internally rather than shown beneath images. Homepage industry thumbnails use empty alt attributes to avoid repeating their link names. English and Traditional Chinese descriptions accurately identify informative scenes.
 
 ## Delivery
 
@@ -42,7 +42,7 @@ The [asset manifest](frontend/photography-manifest.json) records source revision
 - The primary construction master is 1920 pixels wide. The other masters are 1440 pixels wide. Files are encoded at WebP quality 78 without upscaling; exact byte counts are recorded in the manifest.
 - The homepage hero loads eagerly with high fetch priority. Secondary photographs load lazily. Reserved aspect ratios avoid image-induced layout shifts.
 - Responsive crops, per-image focal points, restrained desaturation and a dark hero overlay support legibility. The protected source directory is unchanged.
-- Existing English business copy and section order remain intact. Captions, credits and language navigation are separately tested additions.
+- Existing English business copy and section order remain intact. Photography, internal source records and language navigation are separately tested additions.
 
 ## Motion specification
 
@@ -56,4 +56,4 @@ No looping effects, autoplay video, scroll interception or simulated live signal
 
 ## Verification
 
-`npm run test:media` checks asset hashes, image delivery, responsive layouts, credits, light/dark accessibility, motion, reduced motion, client navigation and no-JavaScript rendering. The bilingual suite checks localized layouts and navigation. Completed results are recorded in [VERIFICATION.md](VERIFICATION.md).
+`npm run test:media` checks asset hashes, internal source records, image delivery, responsive layouts, the absence of public stock-source captions, light/dark accessibility, motion, reduced motion, client navigation and no-JavaScript rendering. The bilingual suite checks localized layouts and navigation. Completed results are recorded in [VERIFICATION.md](VERIFICATION.md).

@@ -4,7 +4,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check } from "@phosphor-icons/react/dist/ssr";
 import { navigation, services } from "@/content/site";
-import { photography, photographyLicense } from "@/content/photography";
+import { photography } from "@/content/photography";
 import { Brand } from "./site-header";
 export function ActionLink({ href, children, secondary = false, light = false }: {
     href: string;
@@ -30,7 +30,7 @@ export function PageIntro({ label, title, description, children }: {
 }
 export function BuildingImage({ className = "", priority = false }: { className?: string; priority?: boolean }) {
  const t = useCopy(); const photo=photography.construction;
- return <figure className={`concept-image ${className}`} data-building-photo><div className="concept-image-frame"><Image src={photo.src} alt={t(photo.alt)} fill sizes={priority ? "100vw" : "(max-width: 767px) calc(100vw - 48px), 50vw"} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} style={{objectPosition:photo.position}} /></div><figcaption>{t("Building site reference")} · <a href={photo.source}>{photo.author}</a> · <a href={photographyLicense}>CC0</a></figcaption></figure>;
+ return <figure className={`concept-image ${className}`} data-building-photo><div className="concept-image-frame"><Image src={photo.src} alt={t(photo.alt)} fill sizes={priority ? "100vw" : "(max-width: 767px) calc(100vw - 48px), 50vw"} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : undefined} style={{objectPosition:photo.position}} /></div></figure>;
 }
 
 function Connection() {

@@ -26,7 +26,7 @@ Delivery repository: `https://github.com/Johnson-HK-RFID/website-development.git
 
 ### Full-viewport construction timelapse refinement — 22 September 2026
 
-Implemented, published and production-verified: the automatically playing, muted Hong Kong construction timelapse remains while visible playback chrome has been removed from the homepage. A licensed Hong Kong field series replaces the generic worker image in a layered editorial gallery with restrained floating and image-hover movement. Reduced-motion and data-saving fallbacks remain intact. GitHub Actions and the public Vercel deployment pass.
+Implemented and locally verified: the isolated homepage photo gallery is removed and construction photography is integrated where the layout has genuine unused space. The homepage service introduction uses one contextual site image; solution cards use compact supporting images without displacing their text. Public stock-source captions are removed while complete author, source, licence and checksum evidence remains in the internal media manifests. Publication and production verification follow.
 
 ### Field editorial redesign — 22 September 2026
 
