@@ -6,6 +6,8 @@ The homepage no longer exposes film playback controls. Its muted 15-second Hong 
 
 Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, 15 English content snapshots, 15 English routes, 40 responsive browser layouts, 40 responsive visual layouts, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, licensed media hashes, local image delivery, film behavior and static fallbacks. Browser captures were inspected at 1440 and 390 pixels. No horizontal overflow or automated accessibility violations were found.
 
+Release commit [`b67d793`](https://github.com/Johnson-HK-RFID/website-development/commit/b67d7936d941fe59de5d29d75abdfafd1b31c492) passed [GitHub Actions](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35952847114) and Vercel production deployment `website-development-9hctkagjq-rfid4.vercel.app`. Live tests against the public production alias confirmed control-free autoplay in both languages and the reduced-motion and no-JavaScript poster paths.
+
 ## Full-viewport construction timelapse refinement — 22 September 2026
 
 The Imprezz reference was inspected in a real browser: its opening uses a full-viewport, muted, looping and inline timelapse. The refined homepage applies that behavior with a separately licensed Hong Kong construction scene showing foundation work, cranes, equipment and surrounding buildings. The local MP4 is 1,951,851 bytes and starts without a click. The 24 September refinement above supersedes the original playback-control treatment. Reduced-motion, data-saving and no-JavaScript paths display the local poster without requesting video.
