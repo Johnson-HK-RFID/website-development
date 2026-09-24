@@ -1,5 +1,7 @@
 # Field editorial redesign
 
+Primary inner pages use a shared split introduction: business context and actions remain in the left reading column while a contextual building-construction photograph occupies the right. Solution detail pages retain their operational focus list and add a route-specific image. On route entry, text rises in a short sequence and the image follows with a slightly longer reveal. A very slow image drift keeps the composition alive after entry. These effects are progressive enhancement and are absent when reduced motion is requested.
+
 ## Design read — 22 September 2026
 
 An engineering company website for contractors, operators and integration partners: real construction work, precise information and a confident, human editorial rhythm. The preserved brief supplies the business content; the user's latest direction adds workers, video and richer interaction. The existing embuilded.com is a visual reference, not approval to import its claims or contact details.

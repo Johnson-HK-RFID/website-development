@@ -1,5 +1,9 @@
 # Embuilded Website Delivery Plan
 
+## Current iteration — contextual inner-page heroes and agent handoff
+
+Implemented and locally verified: every primary inner page and solution-detail route receives contextual construction photography in its top introduction. Route changes trigger a short staggered rise/fade, while hero images carry restrained slow drift; reduced-motion mode suppresses both. `AGENTS.md` and `docs/AGENT_HANDOFF.md` now provide an immediate entry point covering the product concept, development basis, protected files, architecture, commands, design rules, delivery and current state. Publication and production verification follow.
+
 ## Scope and source protection
 
 Build the corporate website from the preserved strategy, content architecture and build plan. The complete directory `references/website-requirements/aa55356c7615/source/Embuilded-website--main` is read-only for this project. Track progress here and in supplemental documents.

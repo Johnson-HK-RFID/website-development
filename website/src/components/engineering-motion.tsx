@@ -15,6 +15,13 @@ export function EngineeringMotion() {
       animations.add(animation);
       animation.onfinish = () => animations.delete(animation);
     };
+    if (!preference.matches) {
+      document.querySelectorAll(".page-intro > .eyebrow, .page-intro > h1, .page-intro > p, .page-intro > .intro-actions, .page-intro > .breadcrumb, .page-intro > .detail-intro").forEach((element, index) => {
+        animate(element, [{ opacity: .12, transform: "translateY(22px)" }, { opacity: 1, transform: "translateY(0)" }], Math.min(index * 75, 260), 680);
+      });
+      const hero = document.querySelector("[data-page-hero]");
+      if (hero) animate(hero, [{ opacity: .2, transform: "translateY(28px)" }, { opacity: 1, transform: "translateY(0)" }], 120, 820);
+    }
     const observer = new IntersectionObserver(entries => {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;

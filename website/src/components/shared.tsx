@@ -19,14 +19,29 @@ export function TextLink({ href, children }: {
     children: ReactNode;
 }) {
  return <Link href={href} className="text-link">{children}<ArrowRight size={18} aria-hidden="true"/></Link>; }
-export function PageIntro({ label, title, description, children }: {
+export function PageIntro({ label, title, description, children, scene = "site" }: {
     label: string;
     title: ReactNode;
     description: string;
     children?: ReactNode;
+    scene?: PageHeroScene;
 }) {
  const t = useCopy();
-    return <section className="page-intro wrap"><div className="eyebrow">{t(label)}</div><h1>{title}</h1><p>{t(description)}</p>{children && <div className="intro-actions">{children}</div>}</section>;
+    return <section className="page-intro page-intro-media wrap"><div className="eyebrow">{t(label)}</div><h1>{title}</h1><p>{t(description)}</p>{children && <div className="intro-actions">{children}</div>}<PageHeroImage scene={scene}/></section>;
+}
+export type PageHeroScene = "site" | "workers" | "crane" | "buildings" | "tower" | "industrial" | "infrastructure";
+const pageHeroScenes: Record<PageHeroScene, { src: string; position: string }> = {
+  site: { src: "/images/field/hong-kong-site.webp", position: "center 66%" },
+  workers: { src: "/images/field/hong-kong-workers.webp", position: "center 24%" },
+  crane: { src: "/images/field/hong-kong-crane.webp", position: "center 43%" },
+  buildings: { src: "/images/field/buildings.webp", position: "center 57%" },
+  tower: { src: "/images/field/tower.webp", position: "center 40%" },
+  industrial: { src: "/images/industries/industrial.webp", position: "center 48%" },
+  infrastructure: { src: "/images/industries/infrastructure.webp", position: "center 28%" },
+};
+export function PageHeroImage({ scene, className = "" }: { scene: PageHeroScene; className?: string }) {
+ const media = pageHeroScenes[scene];
+ return <div className={`page-hero-media ${className}`} data-page-hero><Image src={media.src} alt="" fill priority sizes="(max-width: 767px) 100vw, 46vw" style={{ objectPosition: media.position }}/><span aria-hidden="true"/></div>;
 }
 export function BuildingImage({ className = "", priority = false }: { className?: string; priority?: boolean }) {
  const t = useCopy(); const photo=photography.construction;

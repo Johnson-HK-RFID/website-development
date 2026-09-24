@@ -23,6 +23,7 @@ try {
     await page.evaluate(() => document.fonts.ready);
     assert.equal(response.status(),200,route);
     assert.equal(await page.locator("h1").count(),1,`${route}: single h1`);
+    if (route !== "/") assert.equal(await page.locator("[data-page-hero]").count(), 1, `${route}: contextual page hero`);
     assert.ok((await page.title()).includes("Embuilded"),`${route}: title`);
     for (const image of await page.locator("img").all()) {
       await image.scrollIntoViewIfNeeded();
