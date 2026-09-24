@@ -6,6 +6,8 @@ About, Devices, Services, Solutions, Industries, TRACI, Partners and Contact now
 
 Validation passed: ESLint, TypeScript, seven inquiry tests, the Next.js production build, all 15 English content snapshots, 15 English routes, 40 responsive browser layouts, 40 responsive visual layouts, 15 Chinese routes, 24 Chinese responsive layouts, 8 Chinese accessibility audits, page-hero presence, media hashes, self-hosted delivery, film behavior, reduced motion and no-JavaScript rendering. No horizontal overflow or automated accessibility violations were found.
 
+Release commit [`8644e24`](https://github.com/Johnson-HK-RFID/website-development/commit/8644e2409f5a94bf80bdf2f437b5eee308db8971) passed [GitHub Actions](https://github.com/Johnson-HK-RFID/website-development/actions/runs/35975751610) and Vercel production deployment `website-development-qhkdv2q50-rfid4.vercel.app`. Live checks confirmed contextual hero delivery across 15 representative English, Chinese and solution-detail routes, active image drift under normal motion preferences and static presentation under reduced motion.
+
 ## Integrated photography refinement — 24 September 2026
 
 The standalone three-image homepage gallery was removed. One Hong Kong site photograph now occupies the unused area beneath the homepage service introduction, and each solution card pairs its existing copy with a compact construction image. The resulting compositions were inspected at 1440 and 390 pixels. Stock-library captions and outbound source links are absent from the public interface; author, source, licence and checksum evidence remains in the internal manifests.
